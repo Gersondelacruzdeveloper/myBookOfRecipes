@@ -1,0 +1,23 @@
+/* -------------------------------------------------------------------- Hover / Focus */
+
+.my-brand:hover,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--white);
+}
+
+/* -------------------------------------------------------------------- header */
+nav {
+  position: fixed;
+  background-color: var(--chinese-red);
+  color: var(--white);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-link {
+  color: var(--white);
+}
