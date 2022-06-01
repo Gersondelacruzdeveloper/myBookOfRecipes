@@ -1,3 +1,32 @@
+/*-------------------------------------------------------------------- Variables */
+
+:root {
+  --chinese-red: #a13723;
+  --culture: #f2f2f2;
+  --white: #ffffff;
+  --Granite-grey: #626567;
+  --black: #212529;
+  --font: "Montserrat", Georgia, serif;
+}
+
+/* -------------------------------------------------------------------- Resets */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--culture);
+  min-height: 400px;
+  margin-bottom: 100px;
+  font-family: var(--font);
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
 /* -------------------------------------------------------------------- Hover / Focus */
 
 .my-brand:hover,
