@@ -50,7 +50,65 @@ nav {
 .nav-link {
   color: var(--white);
 }
+/* -------------------------------------------------------------------- home section */
 
+.card_wrapper {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.dish-card {
+  margin: 10px;
+  padding-bottom: 30px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+
+.dish-image > img {
+    width: 300px;
+    height: 310px;
+    object-fit: cover;
+}
+.dish-image > img:hover {
+    opacity: 0.7;
+}
+
+
+.dish-title {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: grey;
+}
+
+.by_name {
+  font-weight: bold;
+  color: grey;
+  text-align: center;
+}
+
+.comments_sign {
+  color: rgb(12, 95, 95);
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.comments_sign > i {
+  font-size: 20px;
+  margin: auto;
+}
+
+.home_tile {
+  margin-top: 100px;
+  text-align: center;
+}
 
 
 /* -------------------------------------------------------------------- footer */
@@ -80,4 +138,36 @@ footer {
 
 .footer-copyright {
   height: 28px;
+}
+
+/* -------------------------------------------------------------------- Media queries */
+
+  /* devices (tablet, etc 1150px and down) */
+  @media only screen and (max-width: 1250px) {
+    .card_wrapper {
+      grid-template-columns: auto auto auto;
+    }
+}
+
+
+  /* Medium devices (big phones, etc 900px and down) */
+  @media only screen and (max-width: 900px) {
+    .card_wrapper {
+      grid-template-columns: auto auto;
+    }
+}
+
+
+/* Small devices (phones, 768px and down) */
+@media only screen and (max-width: 750px) {
+  .card_wrapper {
+    grid-template-columns: auto;
+    width:100%;
+  }
+  .dish-image > img {
+    width: 350px;
+    height: 360px;
+    object-fit: cover;
+}
+
 }
