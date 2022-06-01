@@ -1,8 +1,9 @@
+from flask import render_template
 from myrecipes import app
 
 @app.route("/")
 def home():
-    return "hellow world"
+    return render_template("home.html")
 
 @app.route("/about")
 def about():
