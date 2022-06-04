@@ -1,5 +1,5 @@
 import os
-from myrecipes import app
+from myonlinerecipes import app
 
 
 if __name__ == "__main__":
