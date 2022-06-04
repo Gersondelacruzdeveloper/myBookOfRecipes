@@ -1,7 +1,7 @@
 
-<h1 align="center">Harry Potter Pairs Game</h1>
+<h1 align="center">My Online Recipes</h1>
 
-<h2 align="center">Code Institute - Milestone Project 2</h2>
+<h2 align="center">Code Institute - Milestone Project 3</h2>
 
 <img src="./assets/documentation/readme-file-main-image.png" height="auto" width="100%" alt="Mockup of Harry Potter Game pages when viewed on a desktop, tablet and mobile device." />
 
