@@ -123,18 +123,18 @@ Users should be able to do the following on the website:
 - Site layout is responsive to all media sizes.
 - Users of the site can create an account.
 - Users can login into their existing account.
--	Users can white a recipe comment as long as they are registered.
+-	Users can write a recipe comment as long as they are registered.
 - Users can contact the site owner through a contact form
 - Recipes can be created, read, updated and deleted (CRUD) by the users.
 - On the create recipe form, there is a rich text editor which enable users to write beatiful content
-- Users of the site, either logged in or not, can search the recipes either by text input or filtering the ingredients they want the recipe to be to have.
+- Users of the site, either logged in or not, can search the recipes either by text input or filtering the ingredients they want the recipe to have.
 - Logged in users have the options to either share their recipes or keep it private by toggle the button (Share ?).
-- Logged in users have access to their profile, and view all the the recipes they have created and also view the recipes that othert
+- Logged in users have access to their profile, and view all the the recipes they have created and also view the recipes that other
  people have decided to share.
 - Recipe information includes the same as describe in the Site Owner e.g: recipes author’s name, title, Images, Ingredients, method or step by step process to make the recipes, service size, cooking time, date created, calories, fat, protein, carbohidrates, and salt.
 - Flash messages appear when users create, edit, delete or update the recipe.
 - Easily access the site’s social media channels.
-- Can navigate through pagination on the recipe pages.
+- navigate through pagination on the recipe pages.
 - Change their password securily by email.
 
 ### Structure
