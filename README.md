@@ -169,6 +169,10 @@ The reset password sent page contains one header title and 2 paragraphs, providi
 The reset password set page contains one header title, a sentence with instructions and 2 input box fields with a new password and confirm password, also a the bottom a submit button to confirm the request.
 
 
+##### Reset Password completed Page
+The reset Password completed informs the user that the password finally has been successfully changed, it contains a title, the success message and a link to login to the site again.
+
+
 ##### 404 page 
 
 ##### footer
