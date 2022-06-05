@@ -153,6 +153,7 @@ The Home page display all non-private recipes of the site and it is very respons
 ##### About page 
 
 ##### contact page 
+The contact page contains a header title, a sentence encouraging the user to email the administrator, 3 texts input and a big texterea. also in the right corner, the is a button with the value of submit.
 
 ##### My Recipes page 
 
@@ -178,7 +179,6 @@ The reset Password completed informs the user that the password finally has been
 
 ##### footer
 The footer is statically positioned at the bottom of the page. Similar to the header, contrary to the header the footer's content stay in line when the content exceeds the viewport of the device. The footer contains a link to the project’s GitHub repository, the facebook  link of the site as well as the instagram link, and  also a link to my personal linkedIn profile.
-
 
 ### Skeleton
 
