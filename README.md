@@ -154,6 +154,7 @@ The Home page display all non-private recipes of the site and it is very respons
 The contact page contains a header title, a sentence encouraging the user to email the administrator, 3 texts input and a big texterea. also in the right corner, the is a button with the value of submit.
 
 ##### My Recipes page 
+The My Recipes page which is only available for registered users, contains almost the same layout as the home page, except that on every card there are two buttons one for edit and another one for delete. at top of the page below, the header title,  there is a button with a plus sign where the user can click and add their recipes.
 
 ##### Loging page 
 
