@@ -145,7 +145,7 @@ After identifying the needs of the site's users and after visiting other recipes
 
 ##### Header
 
-The header of the page contains the **NavBar**, the  **Logo**, the following links located to the left: **Home page**, **My Recipes**, **contact**, **Dropdown menu with the name of the user and a list of options to logout or change password**. To the right there is a  search box with a button to search for recipes. The header It is a static element, and is fixed to the top of the page at all times. when the site get 750px down (mobile) the header content change from inline to column.
+The header of the page contains the **NavBar**, the  **Logo**, the following links located to the left: **Home page**, **My Recipes**, **contact**, **Dropdown menu with the name of the user and a list of options to logout or change password**. To the right there is a  search box with a button to search for recipes. The header It is a static element, and is fixed to the top of the page at all times. When the site get 750px down (mobile) the header content change from inline to column.  When the user is not a member the only thing they can see is the Home, Contact, Login Sign Up.
 
 ##### Home 
 The Home page display all non-private recipes of the site and it is very responsive when it comes to a different device, it is composed of 5 cards if its a large device like a monitor or computer, and if it is a tablet device it has 3 cards, mini table with 2 cards, mobile of 750px down the home page just display 1 card. each card contains. an image, title, recipe owner name, and a comment sign along with the number of comments that recipe has.
@@ -159,9 +159,6 @@ The My Recipes page which is only available for registered users, contains almos
 ##### Login page 
 The Loging page contains a card with a header title, two fields: one for the password and another one for the username, and a button below with a login text, below the button there is a sentence with the link of sign up and another one with the link to reset the password in case they have forgotten. each input field has a beautiful icon: one is a user icon and the other one is a key icon.
 
-##### Logout page 
-
-
 ##### Sign up page 
 The signup page contains the same as the login page exept that it contains 2 more input fields, which are the email and the comfirmation of the second password, also it has a sentence with a login link,  in case the user already has the credentioal to login. 
 
@@ -173,7 +170,6 @@ The reset password sent page contains one header title and 2 paragraphs, providi
 
 ##### Reset Password Set Page
 The reset password set page contains one header title, a sentence with instructions and 2 input box fields with a new password and confirm password, also a the bottom a submit button to confirm the request.
-
 
 ##### Reset Password completed Page
 The reset Password completed informs the user that the password finally has been successfully changed, it contains a title, the success message and a link to login to the site again.
