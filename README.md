@@ -13,7 +13,8 @@ The project was developed using **HTML5**, **CSS3**, **JavaScript**, **Python**,
 [Click here to visit the site.](https://gersondelacruzdeveloper.github.io/Milestone-Project2/)
 
 ## Table of contents
-1. [**User   (UX)**](#User-experience)
+- [Project Goals](#project-goals)
+1. [**User (UX)**](#User-experience)
      1. [Strategy](#strategy)
      2. [Scope](#scope)
      3. [Structure](#structure)
@@ -44,7 +45,19 @@ The project was developed using **HTML5**, **CSS3**, **JavaScript**, **Python**,
 7. [Acknowledgements](#acknowledgements)
 8. [Disclaimer](#disclaimer)
 
-    <br><br>
+  <br><br>
+
+### Project Goals
+The goals of this project are to:
+- To create a site where users can easily access recipes, create, save, edit, delete and share their own if they decide to.
+-	Make MyOnlineRecipes website to be a reputable website by creating a professional and intuitive interface.
+-	Create a website that is visually appealing and fully responsive on all devices and screen sizes.
+- To display information in user-friendly way, contributing to an overall good user experience.
+-	Present information about MyOnlineRecipes site so that visitors immediately comprehend what service it provides to its members. 
+-	Allow visitors to easily contact the website administrator with any questions.
+-	Encourage new members to sign up to the site.
+-	Create an interactive website where a community can leave comments on the recipe as long as they have an account and logged in.
+-	Store the users’ data so that it is can be accessed when required.
 ---
 ##  User Experience
 
@@ -52,7 +65,7 @@ The project was developed using **HTML5**, **CSS3**, **JavaScript**, **Python**,
 
 - The User centred Design process started with the creation of the User Stories. these influenced subsequent feature, layout, and design decisions.
 
-- The goal of this project was to create an interactive and user-friendly version of the matching cards game.
+- The goal of this project was to create to create a website where people can save their recipes, comments on any recipes and  share it.
 
 #### User Stories
 
