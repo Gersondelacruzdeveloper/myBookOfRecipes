@@ -147,6 +147,25 @@ After identifying the needs of the site's users and after visiting other recipes
 
 The header of the page contains the **NavBar**, the  **Logo**, the following links located to the left: **Home page**, **My Recipes**, **contact**, **Dropdown menu with the name of the user and a list of options to logout or change password**. To the right there is a  search box with a button to search for recipes. The header It is a static element, and is fixed to the top of the page at all times. when the site get 750px down (mobile) the header content change from inline to column.
 
+##### Home 
+
+##### About page 
+
+##### contact page 
+
+##### My Recipes page 
+
+##### Loging page 
+
+##### logout page 
+
+##### Reset password page 
+
+##### 404 page 
+
+##### footer
+The footer is statically positioned at the bottom of the page. Similar to the header, contrary to the header the footer's content stay in line when the content exceeds the viewport of the device. The footer contains a link to the project’s GitHub repository, the facebook  link of the site as well as the instagram link, and  also a link to my personal linkedIn profile.
+
 
 ### Skeleton
 
