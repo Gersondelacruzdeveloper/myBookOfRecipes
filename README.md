@@ -8,9 +8,9 @@
 My online recipes website help you to create, save and share your recipes with others. I love cooking, when I was nine years old, I started to write recipes in my school notebook, all the recipes from my beautiful Grandma that in piece rest, I stored them there, as well as others recipes that I encounter on my cooing journey. by the time I was 20 years old, I had realised that I had over 15 school notebooks and accessing all those recipes was a nightmare, flipping pages trying to find these recipes, so now thanks to code Institute I have created this beautiful recipes website that allow me not just save all my recipes but also share it with the world. I do not have to struggle to carry my notebooks anymore when I am travelling because it is all online. I also do not have to struggle to find a recipe that I have saved, as I just need to type the words from the title or the ingredients. and the website will give me all the relevant recipes I have and other recipes other people have shared as well. Also, the beauty of this is that anyone can come to this website and save their recipes free of charge. there is a comment section at the bottom of each recipe so people can leave their opinion of what they like and what they do not like about that specific recipe.
 
 
-The project is developed using **HTML**, **CSS** and **JavaScript** with a litle use of bootstrap.
+The project is developed primary using **HTML5**, **CSS3**, **JavaScript**, **Python**, **Bootstrap**, **Flask**, **PostgresSQL**, **MongoDB**
 
-[View website on GitHub Pages](https://gersondelacruzdeveloper.github.io/Milestone-Project2/)
+[Click here to visit the site.](https://gersondelacruzdeveloper.github.io/Milestone-Project2/)
 
 ## Table of contents
 1. [**User   (UX)**](#User-experience)
