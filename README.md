@@ -65,33 +65,37 @@ The goals of this project are to:
 
 - The User centred Design process started with the creation of the User Stories. these influenced subsequent feature, layout, and design decisions.
 
-- The goal of this project was to create to create a website where people can save their recipes, comments on any recipes and  share it.
-
 #### User Stories
 
-#### Potential site user
-As a potential site user: : 
-- I want to play a game that has simple rules. 
-- I want to play a game that is fun and engaging.
-- I want to play a game that show instruction of how to play.
-- I want to play a game that the colors are atractive to the eyes but not too bright to cause me discomfort.
-- I want to play a game that has link to popular culture. 
-- I want to be able to mute the sounds in case I am in a public place.
-- I want to be able to contact the game owner with any questions.
-- I want to be able to see my game score.
-- I want to be challenge and restricted to a countdown clock.
+#### Prospective User
 
-#### Game owner
-As a game owner:
-- I want to create a game which is entertaining and engaging.
-- I want to create visually appealing design.
-- I want to provide fully responsive and accessible game.
-- I want to create a simple navigation around game.
-- I want the game to have my social links.
-- I want the game to have a countdown clock.
-- I want the game to have score whenever the user matches the card.
-- I want the cards to flip like they do in real life.
-- I want to add icon that can mute and unmute the sounds.
+As a potential MyOnlineRecipes site user I want to be able to: 
+
+- Immediately comprehend the purpose behind the MyOnlineRecipes site and view some of the recipes.
+- Navigate throughout the site with eases.
+- Easily create an account and sign in to it.
+- Log out of my account once finished on the website.
+- Experience good responsive design, so I can access the site on different devices.
+- Change my password in case somebody else has access to it.
+- Contact the admin.
+- See a variety of recipes for different meals of the day
+- Enjoy stylish, clean design and style that is inline with the subject of the site
+
+#### As a returning or registered user
+
+As a registered user of MyOnlineRecipes site I want to be able to:
+
+- Log into my account.
+- Save private recipes that only I can see.
+- Have the option to share my recipes with other users
+- Create my own recipes.
+- Edit the recipes I have added.
+- Delete the recipes I have added.
+- Have a rich text editor which enable me to writing beatiful content.
+- Contact admin with queries or feedback.
+- Comments on recipes, so I can share my opinion with other users.
+- Find social media links, so I can follow them on different platforms.
+- Find pagination on the recipe pages, so I do not experience endless scrolling.
 
 ###  Scope
 
