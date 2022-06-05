@@ -150,15 +150,16 @@ The header of the page contains the **NavBar**, the  **Logo**, the following lin
 ##### Home 
 The Home page display all non-private recipes of the site and it is very responsive when it comes to a different device, it is composed of 5 cards if its a large device like a monitor or computer, and if it is a tablet device it has 3 cards, mini table with 2 cards, mobile of 750px down the home page just display 1 card. each card contains. an image, title, recipe owner name, and a comment sign along with the number of comments that recipe has.
 
-##### contact page 
+##### Contact page 
 The contact page contains a header title, a sentence encouraging the user to email the administrator, 3 texts input and a big texterea. also in the right corner, the is a button with the value of submit.
 
 ##### My Recipes page 
 The My Recipes page which is only available for registered users, contains almost the same layout as the home page, except that on every card there are two buttons one for edit and another one for delete. at top of the page below, the header title,  there is a button with a plus sign where the user can click and add their recipes.
 
 ##### Loging page 
+The Logging page contains a card with a header title, two fields: one for the password and another one for the username, and a button below with a logging text, below the button there is a sentence with the link of sign up and another one with the link to reset the password in case they have forgotten. each input field has a beautiful icon: one is a user icon and the other one is a key icon.
 
-##### logout page 
+##### Logout page 
 
 ##### Reset Password Page
 The reset password page contains an input box with 2 buttons one is to cancel and the other button is to submit the request of changing passwords, also it has a header title and below a beautiful paragraph with instructions.
