@@ -16,7 +16,7 @@ The project was developed using **HTML5**, **CSS3**, **JavaScript**, **Python**,
 - [Project Goals](#project-goals)
 1. [**User (UX)**](#User-experience)
      1. [Strategy](#strategy)
-     2. [Scope](#scope)
+     2. [Scope Plane](#Scope-Plane)
      3. [Structure](#structure)
      4. [Skeleton](#skeleton)
      5. [Surface](#surface)
@@ -109,20 +109,33 @@ As the owner of MyOnlineRecipes website I would like to:
 - Provide prospective members with the ability to sign-up easily
 -	Provide visible contact details so that all site visitors can contact the site administrator with ease
 
-###  Scope
 
-The key features of the game were developed based on the user needs. 
-Users should be able to do the following on the game.
-- Start at a home page and given the option to start the game whenever they want.
-- See all social links on the footer and navigate easily through.
-- Be able to go to my GitHub profile.
-- Be able to go to my LinkedIn profile.
-- Contact me for any enquiries through contact page.
-- Be able mute and unmute the sounds.
-- see a countdown clock.
-- Able to see their game score.
-- See instruction of how to play
-- Be able to matches the cards.
+###  Scope Plane
+
+### **Existing Features**
+
+The key features of the website were developed based on user needs. 
+
+Users should be able to do the following on the website:
+
+-	Easy navigation by using navigation bar. Nav links are clearly idenfied both on desktop and when sidenav is expanded on smaller devices.
+- Responsive design allowing users to use site across all devices.
+- Site layout is responsive to all media sizes.
+- Users of the site can create an account.
+- Users can login into their existing account.
+-	Users can white a recipe comment as long as they are registered.
+- Users can contact the site owner through a contact form
+- Recipes can be created, read, updated and deleted (CRUD) by the users.
+- On the create recipe form, there is a rich text editor which enable users to write beatiful content
+- Users of the site, either logged in or not, can search the recipes either by text input or filtering the ingredients they want the recipe to be to have.
+- Logged in users have the options to either share their recipes or keep it private by toggle the button (Share ?).
+- Logged in users have access to their profile, and view all the the recipes they have created and also view the recipes that othert
+ people have decided to share.
+- Recipe information includes the same as describe in the Site Owner e.g: recipes author’s name, title, Images, Ingredients, method or step by step process to make the recipes, service size, cooking time, date created, calories, fat, protein, carbohidrates, and salt.
+- Flash messages appear when users create, edit, delete or update the recipe.
+- Easily access the site’s social media channels.
+- Can navigate through pagination on the recipe pages.
+- Change their password securily by email.
 
 ### Structure
 
