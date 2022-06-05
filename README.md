@@ -145,7 +145,7 @@ After identifying the needs of the site's users and after visiting other recipes
 
 ##### Header
 
-The header of the page contains the **NavBar**, the  **Logo**, the following links located to the left **Home page**, **My Recipes**, **contact**, **Dropdown menu with the name of the user and a list of options to logout or change password**. To the right there is a  search box with a button to search for recipes. It is a static element, and is fixed to the top of the page at all times. when the site get 750px down the header content change from inline to column.
+The header of the page contains the **NavBar**, the  **Logo**, the following links located to the left: **Home page**, **My Recipes**, **contact**, **Dropdown menu with the name of the user and a list of options to logout or change password**. To the right there is a  search box with a button to search for recipes. The header It is a static element, and is fixed to the top of the page at all times. when the site get 750px down (mobile) the header content change from inline to column.
 
 
 ### Skeleton
