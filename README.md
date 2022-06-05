@@ -97,6 +97,18 @@ As a registered user of MyOnlineRecipes site I want to be able to:
 - Find social media links, so I can follow them on different platforms.
 - Find pagination on the recipe pages, so I do not experience endless scrolling.
 
+#### Site Owner
+As the owner of MyOnlineRecipes website I would like to:
+
+-	Provide site members with an effective and user-friendly platform where they can read comments written by other members so that they make more informed choices when choosing a recipes to make.
+- Provide site members with the option to share their recipes the others users.
+- Present the commets in a visually appealing format.
+- Provide site members with the ability to search the site for a specific recipes by entering the title or Ingridients into a search box within the site.
+- Provide users with the ability to add general infomation about the recipes if the decide to, these include the recipes author’s name, title, Images, Ingredients, method or step by step process to make the recipes, service size, cooking time, date created, calories, fat, protein, carbohidrates, and salt. most of of the this field will be optional.
+- Provide the user with a beatiful image cover in case they decide not put add an image to the recipes.
+- Provide prospective members with the ability to sign-up easily
+-	Provide visible contact details so that all site visitors can contact the site administrator with ease
+
 ###  Scope
 
 The key features of the game were developed based on the user needs. 
