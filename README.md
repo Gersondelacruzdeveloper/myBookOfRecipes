@@ -159,7 +159,8 @@ The header of the page contains the **NavBar**, the  **Logo**, the following lin
 
 ##### logout page 
 
-##### Reset password page 
+##### Reset password page
+The reset password page contains an input box with 2 buttons one is to cancel and the other button is to submit the request of changing passwords, also it has a header title and below a beautiful paragraph with instructions.
 
 ##### 404 page 
 
