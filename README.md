@@ -139,17 +139,14 @@ Users should be able to do the following on the website:
 
 ### Structure
 
-After identifying what the game user is looking for,
-the following features were chosen:
+### Informational Architecture
 
-- Exciting interactive home page featuring the name of the game, the main character flying across the page, simple user-friendly icons for the user to navigate easily.
-- Feature game page level one has 8 cards, level two with 16 cards, level three with 24 cards all identical with the Harry potter theme.
-- Top left-hand corner feature a flag poll that counts down to 30s.
-- Top right of the screen has a harry potter awl carrying mail that shows the game points.
-- At the bottom of the screen the player will find the same icons as in the landing page with one extra icon "the sounds icon" to mute and unmute the game.
-- A simple instructions tell the player how to playe the game.
-- The contact me page is uses the same theme as all the other pages.
-- Player are able to easilly write their details and ask their questions to me.
+After identifying the needs of the site's users and after visiting other recipes site and recommendation websites the following website design and features were chosen:
+
+##### Header
+
+The header of the page contains the **NavBar**, the  **Logo**, the following links located to the left **Home page**, **My Recipes**, **contact**, **Dropdown menu with the name of the user and a list of options to logout or change password**. To the right there is a  search box with a button to search for recipes. It is a static element, and is fixed to the top of the page at all times. when the site get 750px down the header content change from inline to column.
+
 
 ### Skeleton
 
