@@ -2,6 +2,7 @@ from myonlinerecipes import db
 
 class User(db.Model):
     #schema for User model
+    __tablename__ = 'User'
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
@@ -15,8 +16,9 @@ class User(db.Model):
 
 class Recipes(db.Model):
     #schema for Recepes model
+     __tablename__ = 'Recipes'
      id = db.Column(db.Integer, primary_key=True)
-     user = db.Column(db.Integer, db.ForeignKey("user.id", ondelete="CASCADE"), nullable=False)
+     user = db.Column(db.Integer, db.ForeignKey(User.id, ondelete="CASCADE"), nullable=False)
      title = db.Column(db.String(201), unique=True, nullable=False)
      image_url = db.Column(db.String(300), unique=True, nullable=False)
      Ingredients = db.Column(db.Text, unique=True, nullable=False)
@@ -37,11 +39,12 @@ class Recipes(db.Model):
 
 class Comments(db.Model):
      #schema for Recepes model
+     __tablename__ = 'Comments'
      id = db.Column(db.Integer, primary_key=True)
      content = db.Column(db.Text, unique=True, nullable=False)
      title = db.Column(db.String(201), unique=True, nullable=False)
-     recipes_id = db.Column(db.Integer, db.ForeignKey("recipes.id", ondelete="CASCADE"), nullable=False)
-     user = db.Column(db.Integer, db.ForeignKey("user.id", ondelete="CASCADE"), nullable=False)
+     recipes_id = db.Column(db.Integer, db.ForeignKey(Recipes.id, ondelete="CASCADE"), nullable=False)
+     user = db.Column(db.Integer, db.ForeignKey(User.id, ondelete="CASCADE"), nullable=False)
      created =  db.Column(db.Date, nullable=False)
      updated =  db.Column(db.Date, nullable=False)
 

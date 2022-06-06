@@ -175,7 +175,8 @@ The reset password set page contains one header title, a sentence with instructi
 The reset Password completed informs the user that the password finally has been successfully changed, it contains a title, the success message and a link to login to the site again.
 
 
-##### 404 page 
+##### 404 page
+Once the user navigates to a wrong path inside myonlinerecipes site, it will be redirected to a beautiful image which contains a button to return home, the header of the image saying 404 and a sentence letting the user know that he went to a run URL.
 
 ##### footer
 The footer is statically positioned at the bottom of the page. Similar to the header, contrary to the header the footer's content stay in line when the content exceeds the viewport of the device. The footer contains a link to the project’s GitHub repository, the facebook  link of the site as well as the instagram link, and  also a link to my personal linkedIn profile.
