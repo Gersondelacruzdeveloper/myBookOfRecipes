@@ -192,25 +192,59 @@ The main content areas were expressed in similar ways to create consistency acro
 #### Wireframes
 
 ##### Desktop
-- [Home page for Desktop](./assets/documentation/wireframes/home.png)
 
-- [Game page for Desktop](./assets/documentation/wireframes/game.png)
+- [Home Page wireframe: ](./myonlinerecipes/static/documentation/wireframes/Home-desktop.png)
 
-- [Contact page for Desktop](./assets/documentation/wireframes/contact.png)
+- [Contact Page wireframe: ](./myonlinerecipes/static/documentation/wireframes/contactpage-desktop.png)
+
+- [Login page wireframe: ](./myonlinerecipes/static/documentation/wireframes/loginpage-destop.png)
+
+- [Add Recipes form wireframe: ](./myonlinerecipes/static/documentation/wireframes/Addrecipeform-desktop.png)
+
+- [My Recipes page wireframe: ](./myonlinerecipes/static/documentation/wireframes/myrecipespage-desktop.png)
+
+- [Password reset page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetpage-desktop.png)
+
+- [Password reset sent page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetsentpage-desktop.png)
+
+- [Register account page wireframe: ](./myonlinerecipes/static/documentation/wireframes/Registeraccountpage-desktop.png)
+
+- [set password page wireframe: ](./myonlinerecipes/static/documentation/wireframes/set-password-page-desktop.png)
+
+- [Reset password complete page wireframe: ](./myonlinerecipes/static/documentation/wireframes/reset-password-complete-page-desktop.png)
 
 ##### Tablet
-- [Home page for Tablet](./assets/documentation/wireframes/home-tablet.png)
+- [Home Page wireframe: ](./myonlinerecipes/static/documentation/wireframes/Home-tablet.png)
+- [Contact Page wireframe: ](./myonlinerecipes/static/documentation/wireframes/contactpage-tablet.png)
+- [Login page wireframe: ](./myonlinerecipes/static/documentation/wireframes/loginpage-tablet.png)
+- [Add Recipes form wireframe: ](./myonlinerecipes/static/documentation/wireframes/Addrecipeform-tablet.png)
+- [My Recipes page wireframe: ](./myonlinerecipes/static/documentation/wireframes/myrecipespage-tablet.png)
 
-- [Game page for Tablet](./assets/documentation/wireframes/game-tablet.png)
+- [Password reset page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetpage-tablet.png)
 
-- [Contact page for Tablet](./assets/documentation/wireframes/contact-tablet.png)
+- [Password reset sent page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetsentpag-tablet.png)
+
+- [Register account page wireframe: ](./myonlinerecipes/static/documentation/wireframes/Registeraccountpage-tablet.png)
+- [set password page wireframe: ](./myonlinerecipes/static/documentation/wireframes/set-password-page-tablet.png)
+
+- [Reset password complete page wireframe: ](./myonlinerecipes/static/documentation/wireframes/reset-password-complete-page-tablet.png)
+
+
 
 ##### Mobile
-- [Home page for Mobile](./assets/documentation/wireframes/home-mobile.png)
+- [Home Page wireframe: ](./myonlinerecipes/static/documentation/wireframes/Home-mobile.png)
+- [Contact Page wireframe: ](./myonlinerecipes/static/documentation/wireframes/contactpage-mobile.png)
+- [Login page wireframe: ](./myonlinerecipes/static/documentation/wireframes/loginpage-mobile.png)
+- [Add Recipes form wireframe: ](./myonlinerecipes/static/documentation/wireframes/Addrecipeform-mobile.png)
+- [My Recipes page wireframe: ](./myonlinerecipes/static/documentation/wireframes/myrecipespage-mobile.png)
+- [Password reset page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetpage-mobile.png)
 
-- [Game page for Mobile](./assets/documentation/wireframes/game-mobile.png)
+- [Password reset sent page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetsentpage-mobile.png)
 
-- [Contact page for Mobile](./assets/documentation/wireframes/contact-mobile.png)
+- [Register account page wireframe: ](./myonlinerecipes/static/documentation/wireframes/Registeraccountpage-mobile.png)
+- [set password page wireframe: ](./myonlinerecipes/static/documentation/wireframes/set-password-page-mobile.png)
+
+- [Reset password complete page wireframe: ](./myonlinerecipes/static/documentation/wireframes/reset-password-complete-page-mobile.png)
 
 <br>
 
