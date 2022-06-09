@@ -10,6 +10,8 @@ class User(db.Model):
     created_on = db.Column(db.DateTime, nullable=False)
     last_login = db.Column(db.DateTime, nullable=True)
     profile_image_url = db.Column(db.String(300), unique=True, nullable=True)
+    recipes = db.relationship('Recipes', backref='user')
+    comments = db.relationship('Comments', backref='user')
   
     def __repr__(self):
         return self.username
@@ -20,18 +22,19 @@ class Recipes(db.Model):
      id = db.Column(db.Integer, primary_key=True)
      user = db.Column(db.Integer, db.ForeignKey(User.id, ondelete="CASCADE"), nullable=False)
      title = db.Column(db.String(201), unique=True, nullable=False)
-     image_url = db.Column(db.String(300), unique=True, nullable=False)
-     Ingredients = db.Column(db.Text, unique=True, nullable=False)
-     method = db.Column(db.Text, unique=True, nullable=False)
-     service_size = db.Column(db.Integer, nullable=False)
-     cooking_time = db.Column(db.Integer, nullable=False)
+     image_url = db.Column(db.String(300), unique=True, nullable=True)
+     Ingredients = db.Column(db.Text, unique=True, nullable=True)
+     method = db.Column(db.Text, unique=True, nullable=True)
+     service_size = db.Column(db.Integer, nullable=True)
+     cooking_time = db.Column(db.Integer, nullable=True)
      is_private = db.Column(db.Boolean, default=False, nullable=False)
      date_created = db.Column(db.DateTime, nullable=False)
-     calories = db.Column(db.String(201), unique=True, nullable=False)
+     calories = db.Column(db.String(201), unique=True, nullable=True)
      fat = db.Column(db.String(201), unique=True, nullable=True)
      protein = db.Column(db.String(201), unique=True, nullable=True)
      carbohidrates = db.Column(db.String(201), unique=True, nullable=True)
-     salt = db.Column(db.String(201), unique=True, nullable=False)
+     salt = db.Column(db.String(201), unique=True, nullable=True)
+     comments = db.relationship('Comments', backref='recipes')
 
      def __repr__(self):
         return self.title
