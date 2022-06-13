@@ -272,34 +272,29 @@ The logo of the site is located on the left side of the navbar as the bootstrap 
 ##### Colour Scheme
 The colour scheme for the game was chosen in order to convey excitement, clean and visually appealing site.
 
-<img src="./assets/documentation/harry-potter-game-pallet-colors.png" height="auto%" width="100%" alt="Harry potter colour palette" />
+![alt text](./myonlinerecipes/static/documentation/readme-images/colour-palette.png "myonlinerecipes' Reviewed colour palette.")
+
+<br>
 
 <sub>*Colour palette created at* [coolors.co](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff).</sub>
 
-- #f1bf58, cream Can color, is usually associated with reverence and humility, in addition to offering warmth and comfort. It is a color that encourages new ideas.
-    - Used the background of every page. 
-    - Use as the background-color of all buttoms.
+- #a13723, Chinese Red, is usually associated with life, health, courage,love, luck, joy, and happiness.
+     - Used in the navbar and in the footer as it makes a beautiful combination with the dishes as well.
 
-- #2ec4b6, Turquoise color, the captivating sea-green stone of the ancients, represents wisdom, tranquility, protection, good fortune, and hope. 
-    - Used in all titles.
-    - Border of logo.
-    - home section for praragraph.
-    - In skills sections for progress bar
-    - Used in menu for hover.
-    - Animated btn boder for the contact form.
+- #f2f2f2, Culture color, which is a light grey represent neutrality and balance. 
+   - Used in the background of the website in order to the main content stand out.
+
+- #ffffff, White represents purity or innocence and stands for everything good and right.
+- Use in all the links of the text
+- Used in the Card
+- As main color text
+
+
+- #626567, Granite Grey, used in the card for the text as it is darker than the Culture colour and makes the text to be more visible.
 
 - #000000, Black color represents evil, darkness, night, and despair. It’s the color used to convey certainty and authority.
-- Used in border of the contact.
-- In the writing and most title and headings.
-- Input fild.
-- Use in all icons.
+- Used in all header title so the users knows at glance where they are located
 
-- #ddc9a2, Sapling color mean Calm, Elegant, Purity.
-- Use in the background of the modal
-
-- #F59A1D, Tree Poppy  or orange peel color associated with meanings of joy, warmth, heat, sunshine, enthusiasm, creativity, success, encouragement, change, determination, health, stimulation, happiness, fun, enjoyment, balance, sexuality, freedom, expression, and fascination. Orange is the color of joy and creativity.
-
-- Use in for all hover elements.
 
 
 #### Icons
