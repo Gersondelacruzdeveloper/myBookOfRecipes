@@ -302,8 +302,7 @@ Icons were used within the site in order to help the user to understand the cont
 They were taken from [Font Awesome](https://fontawesome.com/) and chosen to be self explanatory.
 
 #### Typography
-
-Because the game is composed mostly of images I decided to use simple font **Dancing Script**, this font is a company with **cursive** in case Dancing Script does not load. I have used this font for the form heading and input.
+After an intensive search for the right font, I encountered Montserrat, the most used font for recipes websites, this font I have used to be a company with Georgia and serif in case Montserrat does not load. I have used this font for the body of the website.
 
 ## Existing Features
 
