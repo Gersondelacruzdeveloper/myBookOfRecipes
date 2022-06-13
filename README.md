@@ -264,13 +264,12 @@ The main content areas were expressed in similar ways to create consistency acro
 ### Surface
 
 ##### Design
-The purpose of the game is aligned with the design: colour, positioning of the icon in the footer, Harry Potter animation, and the way the cards flips that looks real, which is simple, effective, and powerful.
+The Project Design is a combination of my own design implemented with the bootstrap framework. The colour helps the website to stand out and give a clear meaning of what the website is about as the colour is usually found in food. Its aim is to be engaging, alluring, and cohesive.
 
 ##### Logo design 
-The logo of the game is the Harry Potter title. Designed in a Harry Potter font that is recognizable across all franchises.
+The logo of the site is located on the left side of the navbar as the bootstrap standard logo, and it is bigger than the others links in order to stand out. and make it recognised by the users.
 
 ##### Colour Scheme
-
 The colour scheme for the game was chosen in order to convey excitement, clean and visually appealing site.
 
 <img src="./assets/documentation/harry-potter-game-pallet-colors.png" height="auto%" width="100%" alt="Harry potter colour palette" />
