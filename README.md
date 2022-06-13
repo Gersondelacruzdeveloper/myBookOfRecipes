@@ -311,7 +311,7 @@ The project consists of three main pages, and has a 404.html error page, a respo
 
 **Fabicon**
 
-The portfolio’s favicon, displayed on the web Brower’s tab, allows the user to identify the website by sight.
+Myonlinerecipes favicon, displayed on the web Brower’s tab, allows the user to identify the website by sight.
  
 **More Features**
 
