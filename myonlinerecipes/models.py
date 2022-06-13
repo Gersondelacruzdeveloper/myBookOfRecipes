@@ -10,8 +10,8 @@ class User(db.Model):
     created_on = db.Column(db.DateTime, nullable=False)
     last_login = db.Column(db.DateTime, nullable=True)
     profile_image_url = db.Column(db.String(300), unique=True, nullable=True)
-    recipes = db.relationship('Recipes', backref='user')
-    comments = db.relationship('Comments', backref='user')
+    recipes = db.relationship('Recipes', backref='owned_user_recipes')
+    comments = db.relationship('Comments', backref='owned_user_comment')
   
     def __repr__(self):
         return self.username

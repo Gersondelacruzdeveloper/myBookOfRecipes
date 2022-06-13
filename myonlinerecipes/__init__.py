@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask 
 from flask_sqlalchemy import SQLAlchemy
 if os.path.exists("env.py"):
     import env # noqa
@@ -15,7 +15,7 @@ db = SQLAlchemy(app)
 
 from myonlinerecipes import views  # noqa
 
-# from myonlinerecipes.models import User
+from myonlinerecipes.models import User
 
-# db.create_all()
-# db.session.commit()
+db.create_all()
+db.session.commit()

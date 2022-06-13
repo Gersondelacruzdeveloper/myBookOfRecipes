@@ -1,9 +1,11 @@
-from flask import render_template
 from myonlinerecipes import app
+from flask import render_template, request, redirect, url_for
+from myonlinerecipes.models import Recipes
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+    recipes = list(Recipes.query.all())
+    return render_template("home.html", recipes=recipes )
 
 @app.route("/about")
 def about():
