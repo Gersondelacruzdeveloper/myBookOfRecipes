@@ -7,7 +7,6 @@ from datetime import date
 from myonlinerecipes.models import Recipes
 from .models import User
 
-
 # Home function 
 @app.route("/")
 def home():
@@ -91,4 +90,4 @@ def login():
             flash("Username or password is incorrect")
             return redirect(url_for("login"))
 
-    return render_template("registration/login.html", username=username) 
+    return render_template("registration/login.html", username=username)
