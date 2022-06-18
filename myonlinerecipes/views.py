@@ -1,21 +1,24 @@
 from curses import flash
 from myonlinerecipes import app
 from myonlinerecipes import db
-from flask import render_template, request, redirect, url_for, flash
+from flask import render_template, request, redirect, url_for, flash, session
 from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import date
 from myonlinerecipes.models import Recipes
 from .models import User
 
+# Home function 
 @app.route("/")
 def home():
     recipes = list(Recipes.query.all())
     return render_template("home.html", recipes=recipes )
 
+# About function 
 @app.route("/about")
 def about():
     return "<h1>about</h1>"
 
+# signup function 
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():
     email = request.form.get('email')
@@ -24,12 +27,10 @@ def sign_up():
     repeat_password = request.form.get('repeat_password')
     today = date.today()
     if request.method == "POST":
-       
          #check if user already exist
         existing_user = User.query.filter_by(username=username).first()
         existing_user_email = User.query.filter_by(email=email).first()
         # generate_password_hash(password, method='sha256')
-
         if existing_user:
             flash("User already exits")
             return redirect(url_for("sign_up"))
@@ -41,7 +42,6 @@ def sign_up():
         elif password != repeat_password:
             flash("The passwords do not match")
             return redirect(url_for("sign_up"))
-
         else:
             new_user = User(
             email = email, 
@@ -53,10 +53,30 @@ def sign_up():
         db.session.add(new_user)
         db.session.commit()
         flash("Registration succesful")
-
+        return redirect(url_for("login"))
     return render_template("registration/signup.html")
 
-# @app.route('/signup', methods=['POST'])
-# def sign_post():
-#     email = request.form.get('email')
-#     return redirect(url_for('auth.login'))
+# Login function 
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    username = request.form.get('username')
+    if request.method == "POST":
+        password = request.form.get('password')
+        #check if user already exist
+        existing_user = User.query.filter_by(username=username).first()
+        
+        if existing_user:
+            # check_password_hash
+            #ensure hashed password matches user imput
+            if existing_user.password == password:
+                session["user"] = username
+                flash("Welcome")
+            else:
+                #invalid password match
+                flash("Username or password are incorrect")
+                return redirect(url_for("login"))
+        else:
+            flash("Username or password is incorrect")
+            return redirect(url_for("login"))
+
+    return render_template("registration/login.html", username=username)

@@ -109,7 +109,7 @@ nav {
   margin-top: 100px;
   text-align: center;
 }
-/* -------------------------------------------------------------------- Sign up page*/
+/* -----------------------------------------------------login and signup page*/
 .user_card {
   width: 350px;
   margin-top: 10%;
@@ -124,16 +124,32 @@ nav {
   -moz-box-shadow:var(--shadow);
   border-radius: 5px;
 }
-
+.signup_button,
+.login_button{
+  width: 100%;
+  background-color:var(--chinese-red);
+  color: var(--white);
+}
+.signup_container,
+.login_container{
+  padding: 0 2rem;
+}
+.signup_button:hover,
+.login_button:hover{
+  color: var(--white);
+  background-color:var(--chineese-redlight);
+}
+.link{
+  color:blue;
+  margin-left:5px;
+}
 .form_container{
   margin-top: 20px;
 }
-
-#form-title{
+.form-title{
   color:var(--black);
 }
-
-.input-group-text {
+.input-group-text{
   height: 40px;
   background: #f7ba5b !important;
   color: white !important;
@@ -145,27 +161,6 @@ nav {
   box-shadow: none !important;
   outline: 0px !important;
 }
-.btn-container{
-  background-color: var(--chinese-red);
-  padding: 0 2rem;
-}
-.white{
-  color: var(--white);
-}
-.white:hover{
-  color: var(--white);
-}
-
-.btn-container:hover{
-background-color: var(--chineese-redlight);
-}
-
-.link{
-color:blue;
-margin-left:5px;
-}
-
-/* -------------------------------------------------------------------- Login page*/
 
 /* -------------------------------------------------------------------- footer */
 footer {
