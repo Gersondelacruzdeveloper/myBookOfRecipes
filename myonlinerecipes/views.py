@@ -7,6 +7,7 @@ from datetime import date
 from myonlinerecipes.models import Recipes
 from .models import User
 
+
 # Home function 
 @app.route("/")
 def home():
@@ -17,6 +18,15 @@ def home():
 @app.route("/about")
 def about():
     return "<h1>about</h1>"
+
+
+# logout function 
+@app.route("/logout")
+def logout():
+    # remove user from session cookies
+    flash("You have been logged out")
+    session.pop('user')
+    return redirect(url_for("login"))
 
 # signup function 
 @app.route("/sign_up", methods=["GET", "POST"])
@@ -56,11 +66,13 @@ def sign_up():
         return redirect(url_for("login"))
     return render_template("registration/signup.html")
 
+
 # Login function 
 @app.route("/login", methods=["GET", "POST"])
 def login():
     username = request.form.get('username')
     if request.method == "POST":
+        username = request.form.get('username')
         password = request.form.get('password')
         #check if user already exist
         existing_user = User.query.filter_by(username=username).first()
@@ -79,4 +91,4 @@ def login():
             flash("Username or password is incorrect")
             return redirect(url_for("login"))
 
-    return render_template("registration/login.html", username=username)
+    return render_template("registration/login.html", username=username) 
