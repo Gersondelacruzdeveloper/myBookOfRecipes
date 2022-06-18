@@ -82,12 +82,13 @@ def login():
             if existing_user.password == password:
                 session["user"] = username
                 flash("Welcome")
+                return redirect(url_for("home"))
             else:
                 #invalid password match
                 flash("Username or password are incorrect")
                 return redirect(url_for("login"))
         else:
-            flash("Username or password is incorrect")
+            flash("Username or password are incorrect")
             return redirect(url_for("login"))
 
     return render_template("registration/login.html", username=username)

@@ -46,9 +46,14 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="{{url_for('home')}}">Home</a>
               </li>
+              {% if session.user%}
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">My Recipes</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+             {% else %}
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">Contact</a>
               </li>
@@ -58,15 +63,19 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="{{url_for('sign_up')}}">sign Up</a>
               </li>
+              {% endif%}
+
+              {% if session.user %}
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Hi Gerson
+                  Hi {{session.user.title()}}
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="{{url_for('logout')}}">Log out</a></li>
                   <li><a class="dropdown-item" href="#">Change Password</a></li>
                 </ul>
               </li>
+              {%endif%}
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
