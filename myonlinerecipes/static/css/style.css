@@ -7,6 +7,8 @@
   --Granite-grey: #626567;
   --black: #212529;
   --font: "Montserrat", Georgia, serif;
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --chineese-redlight: #bc4229;
 }
 
 /* -------------------------------------------------------------------- Resets */
@@ -40,11 +42,9 @@ nav {
   position: fixed;
   background-color: var(--chinese-red);
   color: var(--white);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: var(--shadow);
+  -webkit-box-shadow: var(--shadow);
+  -moz-box-shadow: var(--shadow);
 }
 
 .nav-link {
@@ -109,7 +109,63 @@ nav {
   margin-top: 100px;
   text-align: center;
 }
+/* -------------------------------------------------------------------- Sign up page*/
+.user_card {
+  width: 350px;
+  margin-top: 10%;
+  background:var(--white);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: var(--shadow);
+  -webkit-box-shadow:var(--shadow);
+  -moz-box-shadow:var(--shadow);
+  border-radius: 5px;
+}
 
+.form_container{
+  margin-top: 20px;
+}
+
+#form-title{
+  color:var(--black);
+}
+
+.input-group-text {
+  height: 40px;
+  background: #f7ba5b !important;
+  color: white !important;
+  border: 0 !important;
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+.btn-container{
+  background-color: var(--chinese-red);
+  padding: 0 2rem;
+}
+.white{
+  color: var(--white);
+}
+.white:hover{
+  color: var(--white);
+}
+
+.btn-container:hover{
+background-color: var(--chineese-redlight);
+}
+
+.link{
+color:blue;
+margin-left:5px;
+}
+
+/* -------------------------------------------------------------------- Login page*/
 
 /* -------------------------------------------------------------------- footer */
 footer {
@@ -140,6 +196,7 @@ footer {
   height: 28px;
 }
 
+
 /* -------------------------------------------------------------------- Media queries */
 
   /* devices (tablet, etc 1150px and down) */
@@ -169,5 +226,10 @@ footer {
     height: 360px;
     object-fit: cover;
 }
+.user_card{
+  margin-top: 40%;
+}
+
+
 
 }

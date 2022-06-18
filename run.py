@@ -1,5 +1,6 @@
 import os
 from myonlinerecipes import app
+from myonlinerecipes import db
 
 
 if __name__ == "__main__":
