@@ -1,15 +1,16 @@
 /*-------------------------------------------------------------------- Variables */
 
 :root {
-  --chinese-red: #a13723;
+  --deep-jungle-green: rgb(12, 95, 95);
   --culture: #f2f2f2;
   --white: #ffffff;
   --Granite-grey: #626567;
   --black: #212529;
-  --font: "Montserrat", Georgia, serif;
+  --font: "Montserrat", Georgia, sans-serif;
   --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  --chineese-redlight: #bc4229;
+  --viridian-green: #149F9F;
 }
+/* rgb(12, 95, 95) */
 
 /* -------------------------------------------------------------------- Resets */
 
@@ -36,11 +37,17 @@ a {
 .nav-link:hover {
   color: var(--white);
 }
+/* -------------------------------------------------------------------- general classes */
+.title{
+  margin-top:100px;
+  text-align:center;
+  font-size: 2.5rem;
+}
 
 /* -------------------------------------------------------------------- header */
 nav {
   position: fixed;
-  background-color: var(--chinese-red);
+  background-color: var(--deep-jungle-green);
   color: var(--white);
   box-shadow: var(--shadow);
   -webkit-box-shadow: var(--shadow);
@@ -105,10 +112,16 @@ nav {
   margin: auto;
 }
 
-.home_tile {
-  margin-top: 100px;
+/* -----------------------------------------------------myrecipes pages*/
+
+.add_recpes_btn{
   text-align: center;
 }
+
+.add_recpes_btn button{
+  font-family: Sans-serif;
+}
+
 /* -----------------------------------------------------login and signup page*/
 .user_card {
   width: 350px;
@@ -127,7 +140,7 @@ nav {
 .signup_button,
 .login_button{
   width: 100%;
-  background-color:var(--chinese-red);
+  background-color:var(--deep-jungle-green);
   color: var(--white);
 }
 .signup_container,
@@ -137,7 +150,7 @@ nav {
 .signup_button:hover,
 .login_button:hover{
   color: var(--white);
-  background-color:var(--chineese-redlight);
+  background-color:var(--viridian-green);
 }
 .link{
   color:blue;
@@ -169,7 +182,7 @@ footer {
   left: 0;
   width: 100%;
   height: 50px;
-  background-color: var(--chinese-red);
+  background-color: var(--deep-jungle-green);
   background-size: cover;
   display: grid;
   grid-template-columns: auto auto;

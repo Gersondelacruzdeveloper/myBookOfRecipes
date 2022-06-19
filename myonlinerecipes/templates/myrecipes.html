@@ -2,7 +2,12 @@
 {% block content %}
 
 <section>
-    <h1 class="title"> All Recipes </h1>
+    <h2 class="title"> My Recipes </h2>
+
+    <div class="add_recpes_btn">
+        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-plus-circle"></i> Add Recepes</button>
+     </div>
+
       <div class="card_wrapper">
         {% for recepe in recepes %}
             <div class="dish-card">
@@ -17,4 +22,4 @@
      </div>
 </section>
 
-{% endblock content%}
+{% endblock content %}

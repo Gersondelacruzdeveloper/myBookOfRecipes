@@ -18,6 +18,11 @@ def home():
 def about():
     return "<h1>about</h1>"
 
+# my recipes function 
+@app.route("/myrecipes")
+def myrecipes():
+    return render_template("myrecipes.html")
+
 
 # logout function 
 @app.route("/logout")
