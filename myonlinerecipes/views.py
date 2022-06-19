@@ -23,6 +23,10 @@ def about():
 def myrecipes():
     return render_template("myrecipes.html")
 
+# my recipes form function  
+@app.route("/myrecipes_form")
+def myrecipes_form():
+    return render_template("myrecipes_form.html")
 
 # logout function 
 @app.route("/logout")

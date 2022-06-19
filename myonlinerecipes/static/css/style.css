@@ -121,7 +121,11 @@ nav {
 .add_recpes_btn button{
   font-family: Sans-serif;
 }
-
+/* -----------------------------------------------------myrecipes form pages*/
+.add_recipes_form{
+  width:800px;
+  margin:auto;
+}
 /* -----------------------------------------------------login and signup page*/
 .user_card {
   width: 350px;
