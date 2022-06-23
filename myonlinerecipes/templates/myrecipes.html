@@ -1,21 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section>
+  <h1 class="title"> My Recipes </h1>
   
-  {% extends 'base.html' %}
-  {% block content %}
-  
-  <section>
-    <h1 class="title"> My Recipes </h1>
-      <div class="card_wrapper">
-        {% for recipe in recipes %}
-            <div class="dish-card">
-                <a class="dish-image" href=""> <img src="{{recipe.image_url}}"></a>
-                <div class="dish-title"><p>{{recipe.title[:25].capitalize()}}..</p></div>
-                <div class="by_name"> By {{recipe.owned_user_recipes.username.capitalize()}}</div>
-                <div class="comments_sign">
-                <i class="far fa-comments"></i>
-                </div>
-            </div>
-        {% endfor %}
-     </div>
-  </section>
-  
-  {% endblock content %}
+  <div class="add_recpes_btn">
+    <a href="{{url_for('myrecipes_form')}}"><button type="button" class="btn btn-outline-secondary"><i class="fas fa-plus-circle"></i> Add Recepes</button></a> 
+  </div>
+
+    <div class="card_wrapper">
+      {% for recipe in recipes %}
+          <div class="dish-card">
+              <a class="dish-image" href=""> <img src="{{recipe.image_url}}"></a>
+              <div class="dish-title"><p>{{recipe.title[:25].capitalize()}}..</p></div>
+              <div class="by_name"> By {{recipe.owned_user_recipes.username.capitalize()}}</div>
+              <div class="comments_sign">
+              <i class="far fa-comments"></i>
+              </div>
+          </div>
+      {% endfor %}
+   </div>
+</section>
+
+{% endblock content %}
+
+
