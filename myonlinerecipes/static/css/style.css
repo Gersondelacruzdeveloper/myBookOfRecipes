@@ -43,7 +43,10 @@ a {
   text-align:center;
   font-size: 2.5rem;
 }
-
+.flas-message{
+  width:50%;
+  margin: auto;
+}
 /* -------------------------------------------------------------------- header */
 nav {
   position: fixed;
