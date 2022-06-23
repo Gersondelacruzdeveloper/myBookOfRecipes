@@ -27,6 +27,43 @@ def myrecipes():
     recipes = user.recipes
     return render_template("myrecipes.html", recipes=recipes)
 
+
+# Edit recipes function 
+@app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
+def edit_recipe(recipe_id):
+    user = User.query.filter_by(username=session["user"]).first()
+    service_size =  request.form.get('service_size') or None
+    cooking_time =  request.form.get('cooking_time') or None
+    switch = request.form.get('switch')
+    if switch:
+        switch = True
+    else:
+        switch = False
+    
+    if request.method == "POST":
+        Recipes.query.filter_by(id=recipe_id).update(dict(
+            user = user.id,
+            title = request.form.get('title'),
+            image_url = request.form.get('image'),
+            Ingredients = request.form.get('ingredients'),
+            method =  request.form.get('method'),
+            service_size = service_size,
+            cooking_time = cooking_time,
+            is_private = switch,
+            date_created = date.today(),
+            calories = request.form.get('calories'),
+            fat = request.form.get('fat'),
+            protein = request.form.get('protein'),
+            carbohidrates = request.form.get('carbohidrates'),
+            salt = request.form.get('salt'),
+        ))
+        db.session.commit()
+        flash("Recipe updated Succesfullly")
+        return redirect(url_for('myrecipes'))
+    recipe = Recipes.query.filter_by(id=recipe_id).first()
+    return render_template("edit_recipe.html", recipe=recipe)
+
+    
 # my recipes form function  
 @app.route("/myrecipes_form", methods=["GET", "POST"])
 def myrecipes_form():
