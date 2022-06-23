@@ -3,6 +3,17 @@
 
 <section>
   <h1 class="title"> My Recipes </h1>
+  <div class="flash-message">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+    <div class="alert alert-success" role="alert">
+     {{message}}
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+  </div>
 
   <div class="add_recpes_btn">
     <a href="{{url_for('myrecipes_form')}}"><button type="button" class="btn btn-outline-secondary"><i class="fas fa-plus-circle"></i> Add Recepes</button></a> 
