@@ -21,7 +21,9 @@ def about():
 # my recipes function 
 @app.route("/myrecipes")
 def myrecipes():
-    return render_template("myrecipes.html")
+    user = User.query.filter_by(username=session["user"]).first()
+    recipes = user.recipes
+    return render_template("myrecipes.html", recipes=recipes)
 
 # my recipes form function  
 @app.route("/myrecipes_form")
