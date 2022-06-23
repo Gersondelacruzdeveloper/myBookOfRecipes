@@ -124,6 +124,26 @@ nav {
 .add_recpes_btn button{
   font-family: Sans-serif;
 }
+
+.recipes_btn{
+  text-align:center;
+  margin-top:20px;
+}
+.recipes_btn i{
+  color:var(--white);
+}
+
+.delete_btn,
+.edit_btn{
+  font-size:10px;
+  background-color:var(--deep-jungle-green);
+}
+
+.delete_btn:hover,
+.edit_btn:hover{
+  background-color:var(--viridian-green);
+}
+
 /* -----------------------------------------------------myrecipes form pages*/
 .add_recipes_form{
   width:800px;

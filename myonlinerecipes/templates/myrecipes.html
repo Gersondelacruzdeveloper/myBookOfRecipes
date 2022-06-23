@@ -3,7 +3,7 @@
 
 <section>
   <h1 class="title"> My Recipes </h1>
-  
+
   <div class="add_recpes_btn">
     <a href="{{url_for('myrecipes_form')}}"><button type="button" class="btn btn-outline-secondary"><i class="fas fa-plus-circle"></i> Add Recepes</button></a> 
   </div>
@@ -16,6 +16,10 @@
               <div class="by_name"> By {{recipe.owned_user_recipes.username.capitalize()}}</div>
               <div class="comments_sign">
               <i class="far fa-comments"></i>
+              </div>
+              <div class="recipes_btn">
+                <a href=""><button class="btn edit_btn"><i class="far fa-edit"> Edit </i></button></a>
+                <a href=""><button class="btn delete_btn "><i class="fas fa-trash-alt"> Delete </i></button></a>
               </div>
           </div>
       {% endfor %}
