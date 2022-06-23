@@ -10,7 +10,7 @@ from .models import User
 # Home function 
 @app.route("/")
 def home():
-    recipes = list(Recipes.query.all())
+    recipes = list(Recipes.query.filter_by(is_private = False))
     return render_template("home.html", recipes=recipes )
 
 # About function 
