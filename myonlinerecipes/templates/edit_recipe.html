@@ -1,0 +1,104 @@
+
+
+{% extends 'base.html' %}
+{% block content %}
+
+<section>
+    <h1 class="title">Edit Recepes </h1>
+    <form class="add_recipes_form" method="POST"  enctype="multipart/form-data" action="{{url_for('edit_recipe', recipe_id=recipe.id)}}">
+        <div class="form-row">
+             <!-- Title -->
+          <div class="col-md-12 mb-3">
+            <label for="title">Title*</label>
+            <input type="text" class="form-control" value="{{recipe.title}}" id="title" name="title" required maxlength="201">
+            <div class="valid-feedback">
+              <!-- Looks good! -->
+            </div>
+          </div>
+            <!-- image -->
+          <div class="col-md-12 mb-3">
+            <label for="image">Insert image URL here:</label>
+            <input type="text" class="form-control"  id="image" value="{{recipe.image_url }}"  name="image" placeholder="Optional">
+            <div class="valid-feedback">
+              <!-- Looks good! -->
+            </div>
+            </div>
+            <!-- Ingredients -->
+             <div class="col-md-12 mb-3">
+                <label for="ingredients">Ingredients*:</label>
+                <textarea class="form-control" id="ingredients" placeholder="Add ingredients here" rows="10" name="ingredients" required>{{-recipe.Ingredients-}}</textarea>
+            </div>
+
+              <!-- Method -->
+            <div class="col-md-12 mb-3">
+                <label for="method">Method*:</label>
+                <textarea class="form-control" id="method" placeholder="Step by step method" rows="10" name="method" required>{{-recipe.method-}}</textarea>
+            </div>
+              <!-- Service size -->
+          <div class="col-md-12 mb-3">
+            <label for="service_size"> Service size</label>
+            <input type="number" class="form-control" id="service_size" name="service_size" value="{{recipe.service_size}}" placeholder="Optional" min="0">
+          </div>
+           <!-- Cooking time -->
+          <div class="col-md-12 mb-3">
+            <label for="cooking_time"> Cooking time</label>
+            <input type="number" class="form-control" id="cooking_time" name="cooking_time" placeholder="Optional"  value="{{recipe.cooking_time}}" min="0">
+          </div>
+
+          <!-- Calories -->
+          <div class="col-md-12 mb-3">
+            <label for="calories">Calories</label>
+            <input type="text" class="form-control" id="calories" name="calories" placeholder="Optional" value="{{recipe.calories}}">
+         </div>
+
+         <!-- Fat -->
+         <div class="col-md-12 mb-3">
+            <label for="fat">Fat</label>
+            <input type="text" class="form-control" id="fat" name="fat" placeholder="Optional" value="{{recipe.fat}}">
+         </div>
+
+           <!-- Protein -->
+           <div class="col-md-12 mb-3">
+            <label for="protein">Protein</label>
+            <input type="text" class="form-control" id="protein" name="protein" placeholder="Optional" value="{{recipe.protein}}">
+         </div>
+
+           <!-- Fibre -->
+           <div class="col-md-12 mb-3">
+            <label for="fibre">Fibre</label>
+            <input type="text" class="form-control" id="fibre" name="fibre" placeholder="Optional" value="{{recipe.fibre}}">
+         </div>
+
+           <!-- Carbohidrates -->
+           <div class="col-md-12 mb-3">
+            <label for="carbohidrates">Carbohidrates</label>
+            <input type="text" class="form-control" id="carbohidrates" name="carbohidrates" placeholder="Optional" value="{{recipe.carbohidrates}}">
+         </div>
+
+        <!-- Salt -->
+        <div class="col-md-12 mb-3">
+            <label for="salt">Salt</label>
+            <input type="text" class="form-control" id="salt" name="salt" placeholder="Optional" value="{{recipe.salt}}">
+        </div>
+
+          <!-- Switches -->
+          <div class="form-check form-switch col-md-12 mb-3 ">
+            <label class="form-check-label" id="switch-label" for="switch">Private</label>
+            {% if recipe.is_private == True %}
+               <input class="form-check-input" type="checkbox" role="switch" onclick="privateSwitch()" id="switch" name="switch" checked>
+            {% else %}
+               <input class="form-check-input" type="checkbox" role="switch" onclick="privateSwitch()" id="switch" name="switch">
+            {% endif %}
+          </div>
+
+         <!-- Add recipes button -->
+         <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Edit recipe</button>
+         </div>
+              <!-- Cancel button -->
+              <a href="{{url_for('myrecipes')}}" class="btn btn-outline-secondary" role="button" aria-pressed="true">Cancel</a>
+      </form>
+ 
+</section>
+{% endblock content%}
+  
