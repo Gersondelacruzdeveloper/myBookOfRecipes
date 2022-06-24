@@ -64,8 +64,26 @@ def edit_recipe(recipe_id):
     recipe = Recipes.query.filter_by(id=recipe_id).first()
     return render_template("edit_recipe.html", recipe=recipe)
 
+
+
+# comfirm delete recipes
+@app.route("/comfirm_delete/<recipe_id>", methods=["GET", "POST"])
+def comfirm_delete(recipe_id):
+    recipe = Recipes.query.filter_by(id=recipe_id).first()
+    return render_template("comfirm_delete.html", recipe=recipe)
+
+
+# delete recipes
+@app.route("/delete_recipe/<recipe_id>")
+def delete_recipe(recipe_id):
+    recipe = Recipes.query.filter_by(id=recipe_id).first()
+    db.session.delete(recipe)
+    db.session.commit()
+    flash("Recipe delete Succesfullly")
+    return redirect(url_for('myrecipes'))
     
-# my recipes form function  
+
+# myrecipes form function  
 @app.route("/myrecipes_form", methods=["GET", "POST"])
 def myrecipes_form():
 

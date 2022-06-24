@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section>
+    <h1 class="title"> Are you sure you want delete {{recipe.title[:25].capitalize()}}..?</h1>
+      <div class="card_wrapper">
+            <div class="dish-card">
+                <a class="dish-image" href=""> <img src="{{recipe.image_url}}"></a>
+                <div class="dish-title"><p>{{recipe.title[:25].capitalize()}}..</p></div>
+                <div class="by_name"> By {{recipe.owned_user_recipes.username.capitalize()}}</div>
+                <div class="comments_sign">
+                <i class="far fa-comments"></i>
+                </div>
+            </div>
+     </div>
+         <!-- comfirm delete recipes button -->
+         <div class="comfirm-btn-wrapper">
+        <div class="text-center mb-3">
+                <a href="{{url_for('delete_recipe', recipe_id=recipe.id)}}" class="btn btn-outline-danger" role="button" aria-pressed="true">Comfirm</a>
+        </div>
+         <div class="text-center">
+         <a href="{{url_for('myrecipes')}}" class="btn btn-outline-secondary" role="button" aria-pressed="true">Cancel</a>
+        </div>
+        </div>
+    
+</section>
+
+{% endblock content%}
