@@ -67,7 +67,7 @@ def edit_recipe(recipe_id):
 
 
 # comfirm delete recipes
-@app.route("/comfirm_delete/<recipe_id>", methods=["GET", "POST"])
+@app.route("/comfirm_delete/<recipe_id>")
 def comfirm_delete(recipe_id):
     recipe = Recipes.query.filter_by(id=recipe_id).first()
     return render_template("comfirm_delete.html", recipe=recipe)
