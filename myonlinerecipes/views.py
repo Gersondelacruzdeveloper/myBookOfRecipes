@@ -92,7 +92,7 @@ def delete_recipe(recipe_id):
 # myrecipes form function  
 @app.route("/myrecipes_form", methods=["GET", "POST"])
 def myrecipes_form():
-
+   
     if request.method == "POST":
         user = User.query.filter_by(username=session["user"]).first()
         service_size = request.form.get('service_size') or None

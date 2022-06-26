@@ -91,6 +91,9 @@
          </div>
          <a href="{{url_for('myrecipes')}}" class="btn btn-outline-secondary" role="button" aria-pressed="true">Cancel</a>
       </form>
+ {{ ckeditor.load() }}
+ {{ ckeditor.config(name='method') }}
+ {{ ckeditor.config(name='ingredients') }}
  
 </section>
 {% endblock content%}
