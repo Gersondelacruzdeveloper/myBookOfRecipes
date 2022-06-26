@@ -61,8 +61,26 @@
     <div class="description">
         <p>{{recipe.method|safe}}
         <p>
-    </div> 
+    </div>
+
+    <h5 id="comments">Comments: {{recipe.recipes}}</h5>
+
+    <hr>
+
+    {% if session.user %}
+        <form class="comments_texterea" action="" method="POST" enctype="multipart/form-data">
+            <textarea required class="form-control" placeholder="Leave a comment..." name="comment"></textarea>
+            <br>
+            <input class="btn btn-info" type="submit" value="Submit">
+        </form>
+    {% else %}
+        <p class="text-center">Create an account to comment:</p>
+        <div class="text-center">
+            <a class="btn btn-color" href="{{url_for('sign_up')}}">Register/Login</a>
+        </div>
+    {% endif %}
+
+
+
 </section>
 {% endblock content %}
-
-

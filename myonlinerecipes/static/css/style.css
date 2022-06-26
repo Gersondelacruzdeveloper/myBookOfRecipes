@@ -209,6 +209,64 @@ nav {
   }
   
 
+/* Review or comment  section */
+  #user_circle{
+  font-size:30px;
+  }
+  .comments{
+  font-family:dinot, sans-serif;
+  font-size:15px;
+  margin-left:200px;
+  margin-top:30px;
+  position:relative;
+  width:50%;
+  }
+  
+  #user_name{
+  top: -5px;
+  position:relative;
+  color:rgb(15, 17, 17);
+  }
+  
+  .date_created{
+  color:rgb(86, 89, 89);
+  font-size:14px;
+  margin:0px;
+  padding:0px;
+  }
+  .review_content{
+  color:rgb(15, 17, 17);
+  font-size:14px;
+  margin:0px;
+  padding:0px;
+  }
+  
+  .sub_container{
+  margin:20px;
+  }
+  .btn-color{
+  background-color:rgb(12, 95, 95);
+  color:var(--white);
+  }
+  
+  
+  .btn-color:hover{
+  background-color: #118888;
+  color:var(--white);
+  }
+  
+  
+  #comments{
+  margin-top:10px;
+  font-size:30px;
+  text-align:center;
+  }
+  
+  .comments_texterea{
+  width:30%;
+  margin:auto;
+  }
+
 /* -----------------------------------------------------login and signup page*/
 .user_card {
   width: 350px;

@@ -180,8 +180,8 @@ def sign_up():
 # Login function 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    username = request.form.get('username')
     if request.method == "POST":
-        username = request.form.get('username')
         #check if user already exist
         existing_user = User.query.filter_by(username=username).first()
 
