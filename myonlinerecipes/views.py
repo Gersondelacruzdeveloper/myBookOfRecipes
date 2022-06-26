@@ -20,11 +20,6 @@ def detail_recepe(recipe_id):
     recipe = Recipes.query.filter_by(id=recipe_id).first()
     return render_template("detail_recipe.html", recipe=recipe)
 
-# About function 
-@app.route("/about")
-def about():
-    return "<h1>about</h1>"
-
 # my recipes function 
 @app.route("/myrecipes")
 def myrecipes():
