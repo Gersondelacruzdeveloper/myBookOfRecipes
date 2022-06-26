@@ -21,6 +21,6 @@ from myonlinerecipes import views  # noqa
 
 
 # from myonlinerecipes.models import User
-
+# db.drop_all()
 # db.create_all()
 # db.session.commit()

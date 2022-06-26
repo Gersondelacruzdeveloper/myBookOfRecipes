@@ -6,7 +6,7 @@ from flask import render_template, request, redirect, url_for, flash, session
 from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import date
 from myonlinerecipes.models import Recipes
-from .models import User, Recipes
+from .models import User, Recipes, Comments
 
 # Home function 
 @app.route("/")
@@ -17,8 +17,23 @@ def home():
 # details recipe function 
 @app.route("/detail_recepe/<recipe_id>", methods=["GET", "POST"])
 def detail_recepe(recipe_id):
+    user = User.query.filter_by(username=session["user"]).first()
+    comment = request.form.get('comment'),
+
+    if request.method == 'POST':
+        new_comment = Comments(
+            content = comment,
+            created = date.today(),
+            recipes_id = recipe_id,
+            user = user.id,
+        )
+        # add the new comment to the database
+        db.session.add(new_comment)
+        db.session.commit()
+        flash("You have commented on this item Succesfullly")
     recipe = Recipes.query.filter_by(id=recipe_id).first()
     return render_template("detail_recipe.html", recipe=recipe)
+
 
 # my recipes function 
 @app.route("/myrecipes")
@@ -82,7 +97,7 @@ def delete_recipe(recipe_id):
     db.session.commit()
     flash("Recipe delete Succesfullly")
     return redirect(url_for('myrecipes'))
-    
+
 
 # myrecipes form function  
 @app.route("/myrecipes_form", methods=["GET", "POST"])
@@ -124,6 +139,7 @@ def myrecipes_form():
         return redirect(url_for('myrecipes'))
     return render_template("myrecipes_form.html")
 
+
 # Logout function 
 @app.route("/logout")
 def logout():
@@ -131,6 +147,7 @@ def logout():
     flash("You have been logged out")
     session.pop('user')
     return redirect(url_for("login"))
+
 
 # signup function 
 @app.route("/sign_up", methods=["GET", "POST"])
@@ -141,7 +158,6 @@ def sign_up():
          username = request.form.get('username')
          password = request.form.get('password')
          repeat_password = request.form.get('repeat_password')
-         today = date.today()
          #check if user already exist
          existing_user = User.query.filter_by(username=username).first()
          #check if email already exist
@@ -162,7 +178,7 @@ def sign_up():
             email = email, 
             username = username,
             password = generate_password_hash(password, method='sha256'),
-            created_on = today, 
+            created_on = date.today(), 
         )
          # add the new user to the database
          db.session.add(new_user)

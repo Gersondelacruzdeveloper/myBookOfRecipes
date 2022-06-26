@@ -11,7 +11,7 @@
         <div class="side_description">
             <h1 class="detail_title">Details</h1>
 
-            <p class="date"> <strong>Date Created: </strong>{{recipe.date_created}}</p>
+            <p class="date"> <strong>Date: </strong>{{recipe.date_created.strftime ('%d-%b-%Y')}}</p>
             {% if recipe.service_size%}
             <span><img src="{{url_for('static', filename='images/plate.png')}}"> SERVES {{recipe.service_size}} </span>
             {% endif %}
@@ -62,25 +62,36 @@
         <p>{{recipe.method|safe}}
         <p>
     </div>
+ 
 
-    <h5 id="comments">Comments: {{recipe.recipes}}</h5>
+    <h5 id="comments">Comments: 0</h5>
+
+
+    <!-- {{recipe.comments.count}} -->
 
     <hr>
 
     {% if session.user %}
-        <form class="comments_texterea" action="" method="POST" enctype="multipart/form-data">
-            <textarea required class="form-control" placeholder="Leave a comment..." name="comment"></textarea>
-            <br>
-            <input class="btn btn-info" type="submit" value="Submit">
-        </form>
+    <form class="comments_texterea" action="" method="POST" enctype="multipart/form-data">
+        <textarea required class="form-control" placeholder="Leave a comment..." name="comment"></textarea>
+        <br>
+        <input class="btn btn-info" type="submit" value="Submit">
+    </form>
     {% else %}
-        <p class="text-center">Create an account to comment:</p>
-        <div class="text-center">
-            <a class="btn btn-color" href="{{url_for('sign_up')}}">Register/Login</a>
-        </div>
+    <p class="text-center">Create an account to comment:</p>
+    <div class="text-center">
+        <a class="btn btn-color" href="{{url_for('sign_up')}}">Register/Login</a>
+    </div>
     {% endif %}
 
-
-
+    <div class="comments">
+        {% for comment in recipe.comments %}
+        <div class="sub_container">
+            <i id="user_circle" class="fas fa-user-circle"></i><span id="user_name"> {{comment.username.username.title()}}</span>
+            <p class="date_created"> Commented on {{ comment.created.strftime ('%d-%b-%Y')}}</p>
+            <p class="review_content">{{comment.content }}</p>
+        </div>
+        {% endfor %}
+    </div>
 </section>
 {% endblock content %}
