@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section>
+    <div class="detail_wrapper">
+
+        <div class="detail-image">
+            <img src="{{recipe.image_url}}" style="width:100%">
+        </div>
+
+        <div class="side_description">
+            <h1 class="detail_title">Details</h1>
+
+            <p class="date"> <strong>Date Created: </strong>{{recipe.date_created}}</p>
+            {% if recipe.service_size%}
+            <span><img src="{{url_for('static', filename='images/plate.png')}}"> SERVES {{recipe.service_size}} </span>
+            {% endif %}
+            {% if recipe.cooking_time %}
+            <span class="cooking_time"><i class="far fa-clock"></i> TIME {{recipe.cooking_time}} MINUTES </span>
+            {% endif %}
+
+            <div class="head-title">
+                <p class="detail_title_recipe">{{recipe.title}}</p>
+            </div>
+
+            <div class="nutri_name_container">
+                {% if recipe.calories %}
+                <span class="nutri_name">CALORIES: </span><span>{{recipe.calories}}</span>
+                <hr>
+                {% endif %}
+                {% if recipe.fat %}
+                <span class="nutri_name">FAT: </span><span>{{recipe.fat}}</span>
+                <hr>
+                {% endif %}
+                {% if recipe.protein %}
+                <span class="nutri_name">PROTEIN: </span><span>{{recipe.protein}}</span>
+                <hr>
+                {% endif %}
+                {% if recipe.carbohidrates %}
+                <span class="nutri_name">CARBOHYDRATES: </span><span>{{recipe.carbohidrates}}</span>
+                <hr>
+                {% endif %}
+                {% if recipe.fibre %}
+                <span class="nutri_name">FIBRE: </span><span>{{recipe.fibre}}</span>
+                <hr>
+                {% endif %}
+                {% if recipe.salt %}
+                <span class="nutri_name">SALT: </span><span>{{recipe.salt}}</span>
+                <hr>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+
+    <div class="description">
+        <p>{{recipe.Ingredients}}
+        <p>
+    </div>
+
+    <div class="description">
+        <p>{{recipe.method}}
+        <p>
+    </div> 
+</section>
+{% endblock content %}
+
+

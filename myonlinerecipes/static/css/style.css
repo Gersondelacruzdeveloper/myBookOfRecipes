@@ -149,6 +149,65 @@ nav {
   width:800px;
   margin:auto;
 }
+/* ----------------------------------------------------- detail pages*/
+
+.detail_wrapper{
+  overflow:hidden;
+  margin-top:20px;
+}
+  .detail-image{
+  width:30%;
+  float:left;
+  margin-left:200px;
+  margin-top:113px;
+  }
+  
+  .side_description{
+  width:30%;
+  float:left;
+  margin-left:100px;
+  }
+  .side_description img{
+  width:40px;
+  }
+  .cooking_time{
+  font-size:15px;
+  margin-left:20px;
+  }
+
+  .img_side img{
+  width:20px;
+  margin-left:10px;
+  }
+  .description{
+  clear:left;
+  padding:10px;
+  text-align: justify;
+  width:50%;
+  overflow:auto;
+  font-family:dinot, sans-serif;
+  font-size:18px;
+  margin-left:200px;
+  }
+  
+  .nutri_title{
+  font-weight:bold;
+  }
+  .nutri_name{
+  font-weight:bold;
+  }
+  
+  .nutri_name_container{
+  margin-top:20px;
+  }
+  
+  .detail_title{
+  margin-top:100px;
+  }
+  .detail_title_recipe{
+    margin-top:20px;
+  }
+  
 
 /* -----------------------------------------------------login and signup page*/
 .user_card {

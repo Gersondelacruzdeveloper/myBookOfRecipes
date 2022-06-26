@@ -14,6 +14,12 @@ def home():
     recipes = list(Recipes.query.filter_by(is_private = False))
     return render_template("home.html", recipes=recipes )
 
+# details recipe function 
+@app.route("/detail_recepe/<recipe_id>", methods=["GET", "POST"])
+def detail_recepe(recipe_id):
+    recipe = Recipes.query.filter_by(id=recipe_id).first()
+    return render_template("detail_recipe.html", recipe=recipe)
+
 # About function 
 @app.route("/about")
 def about():
