@@ -32,7 +32,7 @@
               <div class="dish-title"><p>{{recipe.title[:25].capitalize()}}..</p></div>
               <div class="by_name"> By {{recipe.owned_user_recipes.username.capitalize()}}</div>
               <div class="comments_sign">
-              <i class="far fa-comments"></i>
+              <i class="far fa-comments"> {{recipe.comments | length}}</i>
               </div>
               <div class="recipes_btn">
                 <a href="{{url_for('edit_recipe', recipe_id=recipe.id)}}"><button class="btn edit_btn"><i class="far fa-edit"> Edit </i></button></a>
