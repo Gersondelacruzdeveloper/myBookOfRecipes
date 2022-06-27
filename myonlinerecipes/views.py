@@ -30,7 +30,7 @@ def detail_recepe(recipe_id):
         # add the new comment to the database
         db.session.add(new_comment)
         db.session.commit()
-        flash("You have commented on this item Succesfullly")
+        flash("You have commented on this recipe Succesfullly")
     recipe = Recipes.query.filter_by(id=recipe_id).first()
     return render_template("detail_recipe.html", recipe=recipe)
 
