@@ -10,6 +10,7 @@
   --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --viridian-green: #149F9F;
 }
+
 /* rgb(12, 95, 95) */
 
 /* -------------------------------------------------------------------- Resets */
@@ -26,10 +27,12 @@ body {
   margin-bottom: 100px;
   font-family: var(--font);
 }
+
 a {
   text-decoration: none;
   color: var(--white);
 }
+
 /* -------------------------------------------------------------------- Hover / Focus */
 
 .my-brand:hover,
@@ -37,16 +40,19 @@ a {
 .nav-link:hover {
   color: var(--white);
 }
+
 /* -------------------------------------------------------------------- general classes */
-.title{
-  margin-top:100px;
-  text-align:center;
+.title {
+  margin-top: 100px;
+  text-align: center;
   font-size: 2.5rem;
 }
-.flash-message{
-  width:50%;
+
+.flash-message {
+  width: 50%;
   margin: auto;
 }
+
 /* -------------------------------------------------------------------- header */
 nav {
   position: fixed;
@@ -60,6 +66,7 @@ nav {
 .nav-link {
   color: var(--white);
 }
+
 /* -------------------------------------------------------------------- home section */
 
 .card_wrapper {
@@ -79,13 +86,14 @@ nav {
 }
 
 
-.dish-image > img {
-    width: 300px;
-    height: 310px;
-    object-fit: cover;
+.dish-image>img {
+  width: 300px;
+  height: 310px;
+  object-fit: cover;
 }
-.dish-image > img:hover {
-    opacity: 0.7;
+
+.dish-image>img:hover {
+  opacity: 0.7;
 }
 
 
@@ -110,210 +118,233 @@ nav {
   font-size: 14px;
 }
 
-.comments_sign > i {
+.comments_sign>i {
   font-size: 20px;
   margin: auto;
 }
 
 /* -----------------------------------------------------myrecipes pages*/
 
-.add_recpes_btn{
+.add_recpes_btn {
   text-align: center;
 }
 
-.add_recpes_btn button{
+.add_recpes_btn button {
   font-family: Sans-serif;
 }
 
-.recipes_btn{
-  text-align:center;
-  margin-top:20px;
+.recipes_btn {
+  text-align: center;
+  margin-top: 20px;
 }
-.recipes_btn i{
-  color:var(--white);
+
+.recipes_btn i {
+  color: var(--white);
 }
 
 .delete_btn,
-.edit_btn{
-  font-size:10px;
-  background-color:var(--deep-jungle-green);
+.edit_btn {
+  font-size: 10px;
+  background-color: var(--deep-jungle-green);
 }
 
 .delete_btn:hover,
-.edit_btn:hover{
-  background-color:var(--viridian-green);
+.edit_btn:hover {
+  background-color: var(--viridian-green);
 }
 
 /* -----------------------------------------------------myrecipes form pages*/
-.add_recipes_form{
-  width:800px;
-  margin:auto;
+.add_recipes_form {
+  width: 800px;
+  margin: auto;
 }
+
 /* ----------------------------------------------------- detail pages*/
 
-.detail_wrapper{
-  overflow:hidden;
-  margin-top:20px;
+.detail_wrapper {
+  overflow: hidden;
+  margin-top: 20px;
 }
-  .detail-image{
-  width:30%;
-  float:left;
-  margin-left:200px;
-  margin-top:113px;
-  }
-  
-  .side_description{
-  width:30%;
-  float:left;
-  margin-left:100px;
-  }
-  .side_description img{
-  width:40px;
-  }
-  .cooking_time{
-  font-size:15px;
-  margin-left:20px;
-  }
 
-  .img_side img{
-  width:20px;
-  margin-left:10px;
-  }
-  .description{
-  clear:left;
-  padding:10px;
+.detail-image {
+  width: 30%;
+  float: left;
+  margin-left: 200px;
+  margin-top: 113px;
+}
+
+.side_description {
+  width: 30%;
+  float: left;
+  margin-left: 100px;
+}
+
+.side_description img {
+  width: 40px;
+}
+
+.cooking_time {
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.img_side img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.description {
+  clear: left;
+  padding: 10px;
   text-align: justify;
-  width:50%;
-  overflow:auto;
-  font-family:dinot, sans-serif;
-  font-size:18px;
-  margin-left:200px;
-  }
-  
-  .nutri_title{
-  font-weight:bold;
-  }
-  .nutri_name{
-  font-weight:bold;
-  }
-  
-  .nutri_name_container{
-  margin-top:20px;
-  }
-  
-  .detail_title{
-  margin-top:100px;
-  }
-  .detail_title_recipe{
-    margin-top:20px;
-  }
-  
+  width: 50%;
+  overflow: auto;
+  font-family: dinot, sans-serif;
+  font-size: 18px;
+  margin-left: 200px;
+}
+
+.nutri_title {
+  font-weight: bold;
+}
+
+.nutri_name {
+  font-weight: bold;
+}
+
+.nutri_name_container {
+  margin-top: 20px;
+}
+
+.detail_title {
+  margin-top: 100px;
+}
+
+.detail_title_recipe {
+  padding: 15px;
+}
+
+.date {
+  font-family: dinot, sans-serif;
+  color: rgb(127, 127, 127);
+  font-size: 15px;
+}
 
 /* Review or comment  section */
-  #user_circle{
-  font-size:30px;
-  }
-  .comments{
-  font-family:dinot, sans-serif;
-  font-size:15px;
-  margin-left:200px;
-  margin-top:30px;
-  position:relative;
-  width:50%;
-  }
-  
-  #user_name{
+#user_circle {
+  font-size: 30px;
+}
+
+.comments {
+  font-family: dinot, sans-serif;
+  font-size: 15px;
+  margin-left: 200px;
+  margin-top: 30px;
+  position: relative;
+  width: 50%;
+}
+
+#user_name {
   top: -5px;
-  position:relative;
-  color:rgb(15, 17, 17);
-  }
-  
-  .date_created{
-  color:rgb(86, 89, 89);
-  font-size:14px;
-  margin:0px;
-  padding:0px;
-  }
-  .review_content{
-  color:rgb(15, 17, 17);
-  font-size:14px;
-  margin:0px;
-  padding:0px;
-  }
-  
-  .sub_container{
-  margin:20px;
-  }
-  .btn-color{
-  background-color:rgb(12, 95, 95);
-  color:var(--white);
-  }
-  
-  
-  .btn-color:hover{
-  background-color: #118888;
-  color:var(--white);
-  }
-  
-  
-  #comments{
-  margin-top:10px;
-  font-size:30px;
-  text-align:center;
-  }
-  
-  .comments_texterea{
-  width:30%;
-  margin:auto;
-  }
+  position: relative;
+  color: rgb(15, 17, 17);
+}
+
+.date_created {
+  color: rgb(86, 89, 89);
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.review_content {
+  color: rgb(15, 17, 17);
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sub_container {
+  margin: 20px;
+}
+
+.btn-color {
+  background-color: var(--deep-jungle-green);
+  color: var(--white);
+}
+
+
+.btn-color:hover {
+  background-color: var(--viridian-green);
+  color: var(--white);
+}
+
+#comments {
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.comments_texterea {
+  width: 30%;
+  margin: auto;
+}
 
 /* -----------------------------------------------------login and signup page*/
 .user_card {
   width: 350px;
   margin-top: 10%;
-  background:var(--white);
+  background: var(--white);
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 10px;
   box-shadow: var(--shadow);
-  -webkit-box-shadow:var(--shadow);
-  -moz-box-shadow:var(--shadow);
+  -webkit-box-shadow: var(--shadow);
+  -moz-box-shadow: var(--shadow);
   border-radius: 5px;
 }
+
 .signup_button,
-.login_button{
+.login_button {
   width: 100%;
-  background-color:var(--deep-jungle-green);
+  background-color: var(--deep-jungle-green);
   color: var(--white);
 }
+
 .signup_container,
-.login_container{
+.login_container {
   padding: 0 2rem;
 }
+
 .signup_button:hover,
-.login_button:hover{
+.login_button:hover {
   color: var(--white);
-  background-color:var(--viridian-green);
+  background-color: var(--viridian-green);
 }
-.link{
-  color:blue;
-  margin-left:5px;
+
+.link {
+  color: blue;
+  margin-left: 5px;
 }
-.form_container{
+
+.form_container {
   margin-top: 20px;
 }
-.form-title{
-  color:var(--black);
+
+.form-title {
+  color: var(--black);
 }
-.input-group-text{
+
+.input-group-text {
   height: 40px;
   background: #f7ba5b !important;
   color: white !important;
   border: 0 !important;
   border-radius: 0.25rem 0 0 0.25rem !important;
 }
+
 .input_user,
 .input_pass:focus {
   box-shadow: none !important;
@@ -352,19 +383,19 @@ footer {
 
 /* -------------------------------------------------------------------- Media queries */
 
-  /* devices (tablet, etc 1150px and down) */
-  @media only screen and (max-width: 1250px) {
-    .card_wrapper {
-      grid-template-columns: auto auto auto;
-    }
+/* devices (tablet, etc 1150px and down) */
+@media only screen and (max-width: 1250px) {
+  .card_wrapper {
+    grid-template-columns: auto auto auto;
+  }
 }
 
 
-  /* Medium devices (big phones, etc 900px and down) */
-  @media only screen and (max-width: 900px) {
-    .card_wrapper {
-      grid-template-columns: auto auto;
-    }
+/* Medium devices (big phones, etc 900px and down) */
+@media only screen and (max-width: 900px) {
+  .card_wrapper {
+    grid-template-columns: auto auto;
+  }
 }
 
 
@@ -372,17 +403,67 @@ footer {
 @media only screen and (max-width: 750px) {
   .card_wrapper {
     grid-template-columns: auto;
-    width:100%;
+    width: 100%;
   }
-  .dish-image > img {
+
+  .dish-image>img {
     width: 350px;
     height: 360px;
     object-fit: cover;
-}
-.user_card{
-  margin-top: 40%;
-}
+  }
+
+  .user_card {
+    margin-top: 40%;
+  }
 
 
+  /* detail recipe page */
+  .detail_wrapper {
+    margin-top: 100px;
+  }
+
+  .detail-image {
+    width: 90%;
+    float: none;
+    margin: auto;
+  }
+
+  .side_description {
+    width: auto;
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+
+
+  .detail_title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .date {
+    font-family: dinot, sans-serif;
+    color: rgb(127, 127, 127);
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .description {
+    margin: auto;
+    width: 90%;
+  }
+
+  .comments_texterea{
+    width:80%;
+  }
+
+  .comments{
+    margin:auto;
+    margin-top:30px;
+    position:static;
+    width:90%;
+  }
+  
 
 }
