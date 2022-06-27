@@ -5,16 +5,21 @@
     <div class="detail_wrapper">
 
         <div class="detail-image">
+            {% if recipe.image_url %}
             <img src="{{recipe.image_url}}" style="width:100%">
+            {% else %}
+             <img src="{{url_for('static', filename='images/default-img.jpg')}}" style="width:100%">
+            {% endif%}
         </div>
 
         <div class="side_description">
             <h1 class="detail_title">Details</h1>
 
             <p class="date"> <strong>Date: </strong>{{recipe.date_created.strftime ('%d-%b-%Y')}}</p>
-            {% if recipe.service_size%}
+            {% if recipe.service_size %}
             <span><img src="{{url_for('static', filename='images/plate.png')}}"> SERVES {{recipe.service_size}} </span>
             {% endif %}
+
             {% if recipe.cooking_time %}
             <span class="cooking_time"><i class="far fa-clock"></i> TIME {{recipe.cooking_time}} MINUTES </span>
             {% endif %}

@@ -22,7 +22,13 @@
     <div class="card_wrapper">
       {% for recipe in recipes %}
           <div class="dish-card">
+
+            {% if recipe.image_url %}
               <a class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img src="{{recipe.image_url}}"></a>
+              {% else %}
+              <a class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img src="{{url_for('static', filename='images/default-img.jpg')}}"></a>
+              {% endif%}
+
               <div class="dish-title"><p>{{recipe.title[:25].capitalize()}}..</p></div>
               <div class="by_name"> By {{recipe.owned_user_recipes.username.capitalize()}}</div>
               <div class="comments_sign">
