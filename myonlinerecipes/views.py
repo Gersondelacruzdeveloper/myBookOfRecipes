@@ -17,10 +17,10 @@ def home():
 # details recipe function 
 @app.route("/detail_recepe/<recipe_id>", methods=["GET", "POST"])
 def detail_recepe(recipe_id):
-    user = User.query.filter_by(username=session["user"]).first()
-    comment = request.form.get('comment'),
 
     if request.method == 'POST':
+        user = User.query.filter_by(username=session["user"]).first()
+        comment = request.form.get('comment'),
         new_comment = Comments(
             content = comment,
             created = date.today(),
