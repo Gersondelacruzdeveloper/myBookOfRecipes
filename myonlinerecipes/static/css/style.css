@@ -81,7 +81,7 @@ nav {
 .dish-card {
   margin: 10px;
   padding-bottom: 30px;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 5px;
 }
 
@@ -102,17 +102,17 @@ nav {
   text-align: center;
   margin-top: 10px;
   font-weight: bold;
-  color: grey;
+  color: var(--Granite-grey);
 }
 
 .by_name {
   font-weight: bold;
-  color: grey;
+  color: var(--Granite-grey);
   text-align: center;
 }
 
 .comments_sign {
-  color: rgb(12, 95, 95);
+  color: var(--deep-jungle-green);
   text-align: center;
   margin-top: 25px;
   font-size: 14px;
@@ -226,7 +226,7 @@ nav {
 
 .date {
   font-family: dinot, sans-serif;
-  color: rgb(127, 127, 127);
+  color: var(--Granite-grey);
   font-size: 15px;
 }
 
@@ -247,18 +247,18 @@ nav {
 #user_name {
   top: -5px;
   position: relative;
-  color: rgb(15, 17, 17);
+  color: var(--black);
 }
 
 .date_created {
-  color: rgb(86, 89, 89);
+  color: var(--Granite-grey);
   font-size: 14px;
   margin: 0px;
   padding: 0px;
 }
 
 .review_content {
-  color: rgb(15, 17, 17);
+  color: var(--black);
   font-size: 14px;
   margin: 0px;
   padding: 0px;
@@ -340,7 +340,7 @@ nav {
 .input-group-text {
   height: 40px;
   background: #f7ba5b !important;
-  color: white !important;
+  color: var(--white);
   border: 0 !important;
   border-radius: 0.25rem 0 0 0.25rem !important;
 }
@@ -379,11 +379,7 @@ footer {
   grid-template-columns: auto auto;
   justify-content: space-around;
   align-content: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: var(--shadow);
   color: var(--white);
 }
 
@@ -394,6 +390,91 @@ footer {
 .footer-copyright {
   height: 28px;
 }
+
+/* -------------------------------------------------------------------- Contact page */
+.contact_wrapper{
+  clear:both;
+  overflow:hidden;
+  margin-bottom:150px;
+  }
+  
+  .contact_form{
+  width:500px;
+  height:500px;
+  margin-top:78px;
+  margin:auto;
+  }
+  
+  .contact_word{
+  font-size:80px;
+  font-family:"noticia text", serif;
+  color:var(--deep-jungle-green);
+  text-align:center;
+  margin-top:100px;
+  }
+  
+  .contact_form p{
+  color:var(--deep-jungle-green);
+  text-align:center;
+  }
+
+  .contact_form .input-field[type=text], .input-field[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    color:var(--black);
+    background-color:var(--white);
+    font-family:"open sans", sans-serif;
+    font-size:15px;
+    height:40px;
+    border: none;
+  }
+  
+  .contact_form textarea {
+    width: 100%;
+    height:200px;
+    padding: 5px 19px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    color:black;
+    background-color:var(--white);
+    font-family:"open sans", sans-serif;
+    font-size:15px;
+    resize: none;
+    border: none;
+  }
+  
+  .contact_form input[type=text]:hover, input[type=email]:hover, textarea:hover{
+  border:1px solid black;
+  }
+  
+  
+  textarea::placeholder{
+     color: var(--black);
+     font-family:"open sans", sans-serif;
+     font-size:15px;
+  
+  }
+  
+  ::placeholder{
+     color: var(--black);
+     font-family:"open sans", sans-serif;
+     font-size:15px;
+  }
+  
+  
+  .form_btn{
+  float:right;
+  border: none;
+  font-size:14px;
+  color:var(--Granite-grey);
+  }
+  
+  .form_btn:hover{
+  color:var(--viridian-green);
+  }
+
 
 
 /* -------------------------------------------------------------------- Media queries */
