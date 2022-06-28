@@ -1,12 +1,13 @@
 
 from curses import flash
-from myonlinerecipes import app
-from myonlinerecipes import db
+from myonlinerecipes import app, db, mail
 from flask import render_template, request, redirect, url_for, flash, session
 from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import date
 from myonlinerecipes.models import Recipes
 from .models import User, Recipes, Comments
+from flask_mail import Message
+import os
 
 # Home function 
 @app.route("/")
@@ -16,9 +17,30 @@ def home():
 
 
 # Contact form  
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
+    if request.method == 'POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+        message = request.form.get('message')
+        subject = request.form.get('subject')
+
+        msg = Message(
+            subject = subject,
+            body = f" E-mail: {name}\n{message}\n{email}",
+            sender= os.environ.get("MAIL_USERNAME"),
+            recipients = [os.environ.get("MAIL_USERNAME")],
+        )
+        mail.send(msg)
+        return redirect(url_for('email_sent_comfirmation'))
     return render_template("contact.html")
+
+
+# Give the user a nice comfirmation about their email
+@app.route("/email_sent_comfirmation")
+def email_sent_comfirmation():
+    return render_template("email.html")
+
 
 # details recipe function 
 @app.route("/detail_recepe/<recipe_id>", methods=["GET", "POST"])
