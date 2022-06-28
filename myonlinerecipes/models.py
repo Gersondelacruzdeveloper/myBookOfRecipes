@@ -46,8 +46,8 @@ class Comments(db.Model):
      __tablename__ = 'Comments'
      id = db.Column(db.Integer, primary_key=True)
      content = db.Column(db.Text, nullable=False)
-     recipes_id = db.Column(db.Integer, db.ForeignKey(Recipes.id, ondelete="CASCADE"), nullable=False)
-     user = db.Column(db.Integer, db.ForeignKey(User.id, ondelete="CASCADE"), nullable=False)
+     recipes_id = db.Column(db.Integer, db.ForeignKey(Recipes.id, ondelete="CASCADE"))
+     user = db.Column(db.Integer, db.ForeignKey(User.id, ondelete="CASCADE"))
      created =  db.Column(db.Date, nullable=False)
      username = db.relationship('User', backref='comment_user')
 
