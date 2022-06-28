@@ -445,9 +445,9 @@ footer {
 }
 
 .contact_form input[type=text]:hover,
-input[type=email]:hover,
-textarea:hover {
-  border: 1px solid black;
+.contact_form input[type=email]:hover,
+.contact_form textarea:hover {
+  border: 1px solid var(--black);
 }
 
 
@@ -476,7 +476,54 @@ textarea::placeholder {
   color: var(--viridian-green);
 }
 
+/* -------------------------------------------------------------------- email page comfirmation */
 
+
+.email_page-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.sub-container{
+  max-width: 800px;
+  height: auto;
+  border-radius: 5px; 
+  padding: 15px;
+}
+
+.sub-container p {
+  font-size: 18px;
+  font-family: "noticia text", serif;
+  color: var(--deep-jungle-green);
+}
+
+.sub-container h1 {
+  font-family: "noticia text", serif;
+  color: var(--deep-jungle-green);
+}
+
+
+.btn_email_sent {
+  background-color: var(--deep-jungle-green);
+  border: none;
+  color: var(--white);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn_email_sent:hover {
+  color: var(--white);
+  background-color: var(--viridian-green);
+}
+
+.email_page-wrapper{
+  text-decoration: none;
+}
 
 /* -------------------------------------------------------------------- Media queries */
 
