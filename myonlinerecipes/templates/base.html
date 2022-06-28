@@ -77,8 +77,12 @@
               </li>
               {%endif%}
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex" action="{{url_for('search_result')}}" method="post">
+              {% if search_input %}
+              <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search" value="{{search_input}}">
+              {% else %}
+              <input class="form-control me-2" type="search" name="search" placeholder="Search recipes..." aria-label="Search">
+              {% endif%}
               <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
           </div>

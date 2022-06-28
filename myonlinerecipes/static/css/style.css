@@ -351,6 +351,21 @@ nav {
   outline: 0px !important;
 }
 
+/* -----------------------------------------------------Search pages*/
+
+.search_no_result{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 30px;
+  color: red;
+}
+
+.search_title{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 20px;
+}
+
 /* -------------------------------------------------------------------- footer */
 footer {
   position: fixed;

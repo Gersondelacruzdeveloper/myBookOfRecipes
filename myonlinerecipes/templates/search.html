@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<section>
+
+    {% if recipes | length > 0 %}
+
+    {% if search_input != None and search_input != "" %}
+    <h6 class="search_title">YOU SEARCHED FOR "{{search_input|upper}}"</h6>
+   {% else %}
+   <h1 class="title"> All Recipes </h1>
+    {% endif%}
+
+    <div class="card_wrapper">
+        {% for recipe in recipes %}
+            <div class="dish-card">
+                {% if recipe.image_url %}
+                <a class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img src="{{recipe.image_url}}"></a>
+                {% else %}
+                <a class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img src="{{url_for('static', filename='images/default-img.jpg')}}"></a>
+                {% endif%}
+                <div class="dish-title"><p>{{recipe.title[:25].capitalize()}}..</p></div>
+                <div class="by_name"> By {{recipe.owned_user_recipes.username.capitalize()}}</div>
+                <div class="comments_sign">
+                <i class="far fa-comments"> {{recipe.comments | length}}</i>
+                </div>
+            </div>
+        {% endfor %}
+     </div>
+
+     {% else %}
+     <h5 class="search_no_result"> No results for <span style="color:rgb(12, 95, 95)">{{search_input|upper}}</span> </h5>
+
+     {% endif %}
+
+
+</section>
+{% endblock content %}

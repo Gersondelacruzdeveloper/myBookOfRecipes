@@ -35,6 +35,27 @@ def detail_recepe(recipe_id):
     return render_template("detail_recipe.html", recipe=recipe)
 
 
+# Search function
+@app.route("/search_result", methods=["GET", "POST"])
+def search_result():
+    search_input = request.form.get('search')
+    # Select all public recipes
+    public_recipes = Recipes.query.filter_by(is_private = False)
+    recipes_array = []
+    # check if recipe contains the user input
+    # and if it does, then append it to recipes_array
+    if search_input:
+        for recipes in public_recipes:
+            if (search_input in recipes.title or 
+                search_input in recipes.method or
+                search_input in recipes.Ingredients):
+                recipes_array.append(recipes)
+    else:
+        recipes_array = list(Recipes.query.filter_by(is_private = False))
+
+    return render_template("search.html", recipes=recipes_array, search_input=search_input)
+
+
 # my recipes function 
 @app.route("/myrecipes")
 def myrecipes():
