@@ -70,6 +70,9 @@ nav {
 .nav-link {
   color: var(--white);
 }
+.navbar-toggler{
+  color:var(--white);
+}
 
 /* -------------------------------------------------------------------- home section */
 
