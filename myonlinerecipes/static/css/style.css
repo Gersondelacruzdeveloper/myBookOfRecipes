@@ -151,11 +151,17 @@ nav {
   background-color: var(--viridian-green);
 }
 
-/* -----------------------------------------------------myrecipes form pages*/
+/* -----------------------------------------------------myrecipes form */
 .add_recipes_form {
   width: 800px;
   margin: auto;
 }
+
+.edit_recipes_form{
+  width: 800px;
+  margin: auto;
+}
+
 
 /* ----------------------------------------------------- detail pages*/
 
