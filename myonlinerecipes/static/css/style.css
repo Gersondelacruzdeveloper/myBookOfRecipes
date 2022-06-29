@@ -26,14 +26,13 @@ body {
   font-family: var(--font);
 }
 
-a {
+a{
   text-decoration: none;
-  color: var(--white);
+  color: var(--black);
 }
 
 .navbar a:hover,
 .social_links a:hover {
-  color: var(--white);
   border-bottom: 2px solid var(--white);
 }
 
@@ -418,6 +417,9 @@ footer {
 
 .footer-copyright {
   height: 28px;
+}
+.social_links a{
+  color:var(--white);
 }
 
 /* -------------------------------------------------------------------- Contact page */
