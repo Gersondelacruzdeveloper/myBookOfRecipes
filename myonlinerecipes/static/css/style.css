@@ -486,10 +486,10 @@ textarea::placeholder {
   margin-top: 100px;
 }
 
-.sub-container{
+.sub-container {
   max-width: 800px;
   height: auto;
-  border-radius: 5px; 
+  border-radius: 5px;
   padding: 15px;
 }
 
@@ -521,7 +521,7 @@ textarea::placeholder {
   background-color: var(--viridian-green);
 }
 
-.email_page-wrapper{
+.email_page-wrapper {
   text-decoration: none;
 }
 
