@@ -31,6 +31,11 @@ a {
   color: var(--white);
 }
 
+a:hover {
+  color: var(--white);
+  border-bottom: 2px solid var(--white);
+}
+
 /* -------------------------------------------------------------------- Hover / Focus */
 
 .my-brand:hover,
@@ -157,7 +162,7 @@ nav {
   margin: auto;
 }
 
-.edit_recipes_form{
+.edit_recipes_form {
   width: 800px;
   margin: auto;
 }
@@ -388,7 +393,18 @@ footer {
 }
 
 .social-media-links {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   height: 28px;
+  font-size: 20px;
+}
+
+.social_links {
+  padding-left: 10px;
+}
+
+.social_links:hover {
+  padding-left: 10px;
 }
 
 .footer-copyright {
@@ -638,18 +654,18 @@ textarea::placeholder {
   }
 
   /* recipes form  */
-  .add_recipes_form{
+  .add_recipes_form {
     width: 90%;
     margin: auto;
   }
 
-  .edit_recipes_form{
+  .edit_recipes_form {
     width: 90%;
     margin: auto;
   }
-  
+
   /* general */
-  .title{
+  .title {
     margin-top: 100px;
     text-align: center;
     font-size: 1.5rem;
