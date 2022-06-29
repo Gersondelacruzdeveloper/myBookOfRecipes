@@ -2,7 +2,7 @@
 {% block content %}
 
 <section>
-  <h1 class="title">Add Recepes </h1>
+  <h1 class="title">Add Recipe </h1>
   <form class="add_recipes_form" method="POST" enctype="multipart/form-data" action="{{url_for('myrecipes_form')}}">
     <div class="form-row">
       <!-- Title -->
@@ -37,48 +37,49 @@
       <!-- Service size -->
       <div class="col-md-12 mb-3">
         <label for="service_size"> Service size</label>
-        <input type="number" class="form-control" id="service_size" name="service_size" placeholder="Optional">
+        <input type="number" class="form-control" id="service_size" name="service_size" placeholder="Optional" min="0">
       </div>
       <!-- Cooking time -->
       <div class="col-md-12 mb-3">
-        <label for="cooking_time"> Cooking time</label>
-        <input type="number" class="form-control" id="cooking_time" name="cooking_time" placeholder="Optional">
+        <label for="cooking_time"> Cooking time in minutes</label>
+        <input type="number" class="form-control" id="cooking_time" name="cooking_time" placeholder="Optional" min="0">
       </div>
 
       <!-- Calories -->
       <div class="col-md-12 mb-3">
         <label for="calories">Calories</label>
-        <input type="text" class="form-control" id="calories" name="calories" placeholder="Optional">
+        <input type="number" class="form-control" id="calories" name="calories" placeholder="Optional" min="0">
       </div>
 
       <!-- Fat -->
       <div class="col-md-12 mb-3">
-        <label for="fat">Fat</label>
-        <input type="text" class="form-control" id="fat" name="fat" placeholder="Optional">
+        <label for="fat">Fat in Grams</label>
+        <input type="number" class="form-control" id="fat" name="fat" placeholder="Optional" min="0">
       </div>
 
       <!-- Protein -->
       <div class="col-md-12 mb-3">
-        <label for="protein">Protein</label>
-        <input type="text" class="form-control" id="protein" name="protein" placeholder="Optional">
+        <label for="protein">Protein in Grams</label>
+        <input type="number" class="form-control" id="protein" name="protein" placeholder="Optional" min="0">
       </div>
 
       <!-- Fibre -->
       <div class="col-md-12 mb-3">
-        <label for="fibre">Fibre</label>
-        <input type="text" class="form-control" id="fibre" name="fibre" placeholder="Optional">
+        <label for="fibre">Fibre in Grams</label>
+        <input type="number" class="form-control" id="fibre" name="fibre" placeholder="Optional" min="0">
       </div>
 
-      <!-- Carbohidrates -->
+      <!-- Carbohydrate -->
       <div class="col-md-12 mb-3">
-        <label for="carbohidrates">Carbohidrates</label>
-        <input type="text" class="form-control" id="carbohidrates" name="carbohidrates" placeholder="Optional">
+        <label for="carbohidrates">Carbohydrate in Grams </label>
+        <input type="number" class="form-control" id="carbohidrates" name="carbohidrates" placeholder="Optional"
+          min="0">
       </div>
 
       <!-- Salt -->
       <div class="col-md-12 mb-3">
-        <label for="salt">Salt</label>
-        <input type="text" class="form-control" id="salt" name="salt" placeholder="Optional">
+        <label for="salt">Salt in Grams</label>
+        <input type="number" class="form-control" id="salt" name="salt" placeholder="Optional" min="0">
       </div>
 
       <!-- Switches -->
