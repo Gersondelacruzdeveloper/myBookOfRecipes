@@ -22,7 +22,14 @@ mail = Mail(app)
 ckeditor = CKEditor(app)
 
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
+
 app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
+
+url_db =  os.environ.get("DATABASE_URL")
+if url_db.startswith("postgres://"):
+    url_db = url_db.replace("postgres://", "postgresql://", 1)
+    app.config["SQLALCHEMY_DATABASE_URI"] = url_db
+
 
 # Help not to show the SQLALCHEMY_TRACK_MODIFICATIONS message
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
