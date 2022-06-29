@@ -29,3 +29,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 from myonlinerecipes import views  # noqa
+
+db.create_all()
+db.session.commit()
