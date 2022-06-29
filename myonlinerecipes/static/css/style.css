@@ -631,6 +631,16 @@ textarea::placeholder {
     font-weight: bold;
   }
 
+  /* recipes form  */
+  .add_recipes_form{
+    width: 90%;
+    margin: auto;
+  }
+
+  .edit_recipes_form{
+    width: 90%;
+    margin: auto;
+  }
 
 }
 
