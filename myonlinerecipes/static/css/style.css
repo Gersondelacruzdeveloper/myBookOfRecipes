@@ -563,6 +563,10 @@ textarea::placeholder {
   margin: 10% auto;
 }
 
+#error-500-container p {
+  text-align: center;
+}
+
 .card img {
   width: 400px;
   margin: auto;
@@ -580,14 +584,12 @@ textarea::placeholder {
   margin: 50px auto;
   color: var(--white);
 }
+
 .links_for_500:hover,
 .links_for_404:hover {
   background-color: var(--viridian-green);
   color: var(--white);
 }
-
-
-
 
 /* -------------------------------------------------------------------- Media queries */
 
