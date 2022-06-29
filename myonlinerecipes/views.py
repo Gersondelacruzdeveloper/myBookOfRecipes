@@ -285,6 +285,7 @@ def page_not_found(e):
     # Display the custom 404, Page Not Found, page.
     return render_template("404.html"), 404
 
+
 # Internal Server error
 @app.errorhandler(500)
 def server_error_500(e):
