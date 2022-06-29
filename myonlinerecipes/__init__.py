@@ -22,7 +22,7 @@ mail = Mail(app)
 ckeditor = CKEditor(app)
 
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_URL")
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
 
 # Help not to show the SQLALCHEMY_TRACK_MODIFICATIONS message
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
