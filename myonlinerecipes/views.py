@@ -277,3 +277,10 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("registration/login.html", username=username)
+
+
+# Page not found 404 error
+@app.errorhandler(404)
+def page_not_found(e):
+    # Display the custom 404, Page Not Found, page.
+    return render_template("404.html"), 404
