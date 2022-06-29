@@ -6,9 +6,9 @@
   <div class="flash-message">
     {% with messages = get_flashed_messages() %}
     {% if messages %}
-      {% for message in messages %}
+    {% for message in messages %}
     <div class="alert alert-success" role="alert">
-     {{message}}
+      {{message}}
     </div>
     {% endfor %}
     {% endif %}
@@ -16,33 +16,38 @@
   </div>
 
   <div class="add_recpes_btn">
-    <a href="{{url_for('myrecipes_form')}}"><button type="button" class="btn btn-outline-secondary"><i class="fas fa-plus-circle"></i> Add Recepes</button></a> 
+    <a href="{{url_for('myrecipes_form')}}"><button type="button" class="btn btn-outline-secondary"><i
+          class="fas fa-plus-circle"></i> Add Recepes</button></a>
   </div>
 
-    <div class="card_wrapper">
-      {% for recipe in recipes %}
-          <div class="dish-card">
+  <div class="card_wrapper">
+    {% for recipe in recipes %}
+    <div class="dish-card">
 
-            {% if recipe.image_url %}
-              <a class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img src="{{recipe.image_url}}"></a>
-              {% else %}
-              <a class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img src="{{url_for('static', filename='images/default-img.jpg')}}"></a>
-              {% endif%}
+      {% if recipe.image_url %}
+      <a class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img
+          src="{{recipe.image_url}}"></a>
+      {% else %}
+      <a class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img
+          src="{{url_for('static', filename='images/default-img.jpg')}}"></a>
+      {% endif%}
 
-              <div class="dish-title"><p>{{recipe.title[:25].capitalize()}}..</p></div>
-              <div class="by_name"> By {{recipe.owned_user_recipes.username.capitalize()}}</div>
-              <div class="comments_sign">
-              <i class="far fa-comments"> {{recipe.comments | length}}</i>
-              </div>
-              <div class="recipes_btn">
-                <a href="{{url_for('edit_recipe', recipe_id=recipe.id)}}"><button class="btn edit_btn"><i class="far fa-edit"> Edit </i></button></a>
-                <a href="{{url_for('comfirm_delete', recipe_id=recipe.id)}}"><button class="btn delete_btn "><i class="fas fa-trash-alt"> Delete </i></button></a>
-              </div>
-          </div>
-      {% endfor %}
-   </div>
+      <div class="dish-title">
+        <p>{{recipe.title[:25].capitalize()}}..</p>
+      </div>
+      <div class="by_name"> By {{recipe.owned_user_recipes.username.capitalize()}}</div>
+      <div class="comments_sign">
+        <i class="far fa-comments"> {{recipe.comments | length}}</i>
+      </div>
+      <div class="recipes_btn">
+        <a href="{{url_for('edit_recipe', recipe_id=recipe.id)}}"><button class="btn edit_btn"><i class="far fa-edit">
+              Edit </i></button></a>
+        <a href="{{url_for('comfirm_delete', recipe_id=recipe.id)}}"><button class="btn delete_btn "><i
+              class="fas fa-trash-alt"> Delete </i></button></a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </section>
 
 {% endblock content %}
-
-

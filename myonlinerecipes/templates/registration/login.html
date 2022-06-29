@@ -10,19 +10,19 @@
             <div>
                 {% with messages = get_flashed_messages() %}
                 {% if messages %}
-                  {% for message in messages %}
-                  {% if message != "Welcome" and message != "Registration succesful"%}
-                  <div class="alert alert-danger" role="alert">
-                    {{message}} 
-                  </div>
-                  {% elif  message == "Registration succesful"%}
-                <div class="alert alert-success" role="alert">
-                 {{message}} now login
+                {% for message in messages %}
+                {% if message != "Welcome" and message != "Registration succesful"%}
+                <div class="alert alert-danger" role="alert">
+                    {{message}}
                 </div>
-                  {% endif%}
-                  {% endfor %}
+                {% elif message == "Registration succesful"%}
+                <div class="alert alert-success" role="alert">
+                    {{message}} now login
+                </div>
+                {% endif%}
+                {% endfor %}
                 {% endif %}
-              {% endwith %}
+                {% endwith %}
             </div>
             <div class="d-flex justify-content-center form_container">
                 <form method="POST" action="{{url_for('login')}}">
@@ -46,7 +46,7 @@
                         <input class="btn login_button" type="submit" value="Login">
                     </div>
                 </form>
-           
+
                 <!-- sign up link-->
             </div>
             <div class="mt-4">
@@ -54,7 +54,7 @@
                     Don't have an account? <a href="{{url_for('sign_up')}}" class="ml-2 link">Sign Up</a>
                 </div>
             </div>
-               <!-- Reset password link-->
+            <!-- Reset password link-->
             <div class="mt-4">
                 <div class="d-flex justify-content-center links">
                     Forgot password ? <a href="" class="ml-2 link">Reset Password</a>

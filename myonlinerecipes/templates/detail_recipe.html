@@ -8,7 +8,7 @@
             {% if recipe.image_url %}
             <img src="{{recipe.image_url}}" style="width:100%">
             {% else %}
-             <img src="{{url_for('static', filename='images/default-img.jpg')}}" style="width:100%">
+            <img src="{{url_for('static', filename='images/default-img.jpg')}}" style="width:100%">
             {% endif%}
         </div>
 
@@ -71,15 +71,15 @@
     <div class="flash-message">
         {% with messages = get_flashed_messages() %}
         {% if messages %}
-          {% for message in messages %}
+        {% for message in messages %}
         <div class="alert alert-success" role="alert">
-         {{message}}
+            {{message}}
         </div>
         {% endfor %}
         {% endif %}
         {% endwith %}
-      </div>
- 
+    </div>
+
     <h5 id="comments">Comments: {{recipe.comments | length}}</h5>
 
 
@@ -103,7 +103,8 @@
     <div class="comments">
         {% for comment in recipe.comments %}
         <div class="sub_container">
-            <i id="user_circle" class="fas fa-user-circle"></i><span id="user_name"> {{comment.username.username.title()}}</span>
+            <i id="user_circle" class="fas fa-user-circle"></i><span id="user_name">
+                {{comment.username.username.title()}}</span>
             <p class="date_created"> Commented on {{ comment.created.strftime ('%d-%b-%Y')}}</p>
             <p class="review_content">{{comment.content }}</p>
         </div>
