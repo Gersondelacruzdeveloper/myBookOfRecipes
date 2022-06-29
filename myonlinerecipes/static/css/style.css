@@ -32,7 +32,7 @@ a {
 }
 
 .navbar a:hover,
-.social_links a:hover{
+.social_links a:hover {
   color: var(--white);
   border-bottom: 2px solid var(--white);
 }
@@ -334,7 +334,7 @@ nav {
   background-color: var(--viridian-green);
 }
 
-.link{
+.link {
   color: blue;
   margin-left: 5px;
 }
