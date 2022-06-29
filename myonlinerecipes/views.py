@@ -1,6 +1,6 @@
 from curses import flash
 from myonlinerecipes import app, db, mail
-from flask import render_template, request, redirect, url_for, flash, session, g
+from flask import render_template, request, redirect, url_for, flash, session
 from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import date
 from myonlinerecipes.models import Recipes
@@ -11,7 +11,8 @@ from functools import wraps
 
 
 # Login decorator allow just logged in users
-# Code taken from https://flask.palletsprojects.com/en/2.1.x/patterns/viewdecorators/
+# Code taken
+# from https://flask.palletsprojects.com/en/2.1.x/patterns/viewdecorators/
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
@@ -94,7 +95,10 @@ def search_result():
     else:
         recipes_array = list(Recipes.query.filter_by(is_private=False))
 
-    return render_template("search.html", recipes=recipes_array, search_input=search_input)
+    return render_template(
+        "search.html",
+        recipes=recipes_array,
+        search_input=search_input)
 
 
 # my recipes function
@@ -265,7 +269,9 @@ def login():
         if existing_user:
             # check_password_hash
             # ensure hashed password matches user imput
-            if check_password_hash(existing_user.password, request.form.get("password")):
+            if (
+                check_password_hash(
+                    existing_user.password, request.form.get("password"))):
                 session["user"] = username
                 return redirect(url_for("home"))
             else:
