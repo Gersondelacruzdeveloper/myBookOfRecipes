@@ -2,10 +2,11 @@
 {% block content %}
 
 <section id="error-500-container">
-    <h1 class="title">500 Server Error.</h1>
+    <h1 class="title">Oops something went wrong.</h1>
+    <p>Try to refresh the page or feel free to contact us if the problem persists.</p>
     <div class="card">
         <img src="{{ url_for('static', filename='images/500_image_error.jpg')}}" alt="500 internal server error image">
-        <a class="links_for_500" href="{{url_for('home')}}"><i class="fa-solid fa-house"></i>Back to safety</a>
+        <a class="links_for_500" href="{{url_for('home')}}"> <i class="fa-solid fa-house"></i> Back to safety</a>
     </div>
 </section>
 
