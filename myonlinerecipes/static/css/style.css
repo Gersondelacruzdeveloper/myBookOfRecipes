@@ -556,7 +556,8 @@ textarea::placeholder {
   text-decoration: none;
 }
 
-/* --------------------------------------------------------------------  404 error page */
+/* --------------------------------------------------------------------  404 and 500 error page*/
+#error-500-container,
 #error-404-container {
   width: 50%;
   margin: 10% auto;
@@ -567,6 +568,7 @@ textarea::placeholder {
   margin: auto;
 }
 
+.links_for_500,
 .links_for_404 {
   font-size: 10px;
   background-color: var(--deep-jungle-green);
@@ -578,7 +580,7 @@ textarea::placeholder {
   margin: 50px auto;
   color: var(--white);
 }
-
+.links_for_500:hover,
 .links_for_404:hover {
   background-color: var(--viridian-green);
   color: var(--white);
