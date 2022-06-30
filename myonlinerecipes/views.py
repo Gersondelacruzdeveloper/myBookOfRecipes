@@ -41,7 +41,7 @@ def contact():
 
         msg = Message(
             subject=subject,
-            body=f" E-mail: {name}\n{message}\n{email}",
+            body= "E-mail: " + name + "\n" + message + "\n" + email,
             sender=os.environ.get("MAIL_USERNAME"),
             recipients=[os.environ.get("MAIL_USERNAME")],
         )
