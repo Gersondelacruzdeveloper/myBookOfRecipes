@@ -326,6 +326,14 @@ Each page has a fixed footer at the bottom. This provides Facebook, Instagram, T
 
 ## Technologies Used
 
+- Languages: 
+
+  * [HTML5](http://en.wikipedia.org/wiki/HTML5). Used to create the structure of the myonlinerecipe website and the custom 404 and 500 pages.
+  * [CSS3](http://en.wikipedia.org/wiki/CSS). Used to add style to the website. 
+  * [JavaScript](https://en.wikipedia.org/wiki/JavaScript). Used to create the dynamic, interactive elements of the website such as the carousel and to call the Google Books API.
+  * [Python](https://en.wikipedia.org/wiki/Python_(programming_language)). Used to create and run the web application.
+  * [Jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine)). Used to simplify displaying data from the backend of this project smoothly and effectively in html.
+
 * The project was written in HTML and CSS and JavaScript with litle use of bootstrap 5
 * The project was written and tested in the [Gitpod](https://gitpod.io/) IDE.
 * The project was debugged using [Google Chrome](https://www.google.com/intl/en_uk/chrome/) [Dev Tools](https://developers.google.com/web/tools/chrome-devtools).
