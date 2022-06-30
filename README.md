@@ -527,12 +527,34 @@ All functionality for the footer was manualy tested on every page.
 <br>
 <br>
 
-### Bugs
+## Error during Development and Fixes
 
-No bugs
+I encounter the following error during **developemt**:
 
+![alt text](./myonlinerecipes/static/documentation/testing/error_duplicate.png "Screenshot of error_duplicate.")
 <br>
 
+This error appear because I had the value unique=true in my models so when I added even empty values more than 1 the error was apearing. so I deleted and **there were no error anymore**.
+
+## Error during **Deployment**
+I encounter the following error during ployment:
+
+![alt text](./myonlinerecipes/static/documentation/testing/sqlalchemy_dialects_postgres_error.png "sqlalchemy dialects postgres error.")
+<br>
+
+ Looking fo solution for this problem on [Stack Overflow](https://stackoverflow.com/), and in other websites. but I finally I manged to find it in the actual [heroku website](https://dashboard.heroku.com/).
+
+![alt text](./myonlinerecipes/static/documentation/testing/heroku_recomendation.png "sqlalchemy dialects postgres error.")
+<br>
+Basically SQLAlchemy 1.4.x has removed support for the postgres URI scheme, and as defaul heroku has that url scheme. so to fix the problem I follow heroku recomendation and added the following code.
+
+![alt text](./myonlinerecipes/static/documentation/testing/my_fixes_from_heroku.png "sqlalchemy dialects postgres error.")
+<br>
+
+After that the **Problem was fixed**
+
+
+<br>
 ## Deployment
 
 ## How this Project was Deployed
