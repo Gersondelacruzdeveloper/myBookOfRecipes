@@ -442,6 +442,30 @@ There were no errors to show so I did not have to fix anything:
 ![alt text](./myonlinerecipes/static/documentation//testing/css_validation.png "error fixed.")
 <br>
 
+### **Python File**
+[pep8online.com](http://pep8online.com/) was used to check whether the app.py Python file was PEP8 compliant.
+
+There were **4 errors** saying that the lines were too long.
+
+![alt text](./myonlinerecipes/static/documentation/testing/fail_PP8.png "Screenshot of pep8online.com's results showing 4 errors.")
+<br>
+
+So I close the if statement in extra () and shorten it and that **Fixed the errors**
+
+![alt text](./myonlinerecipes/static/documentation/testing/pass_PP8.png "Screenshot of pep8online.com's results showing 4 errors.")
+<br>
+
+### **Check Python error**
+
+I also test the website with [infoheap](https://infoheap.com/python-lint-online/) Python linter and it showed the following error:
+
+![alt text](./myonlinerecipes/static/documentation/testing/fail_error_test.png "Screenshot of infoheap Python linter results.")
+<br>
+In reality f-strings is not an error it is just a new way for formatting a string in python but probably the website have not been updated. so I just deleted it and add + signs to format the strings with variables, after that, the ** error was fixed **.
+
+![alt text](./myonlinerecipes/static/documentation/testing/pass_error_test.png "Screenshot of infoheap Python linter results.")
+<br>
+
 ### Manual Testing
 The recipe website has been tested in the following browsers:
 - Chrome Version 85.0.4183.121 
