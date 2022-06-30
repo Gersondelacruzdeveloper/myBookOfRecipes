@@ -301,13 +301,11 @@ Each page has a fixed footer at the bottom. This provides Facebook, Instagram, T
 
 #### contact.html features
   - Title encoraging user to send a mesage.
-  - A well structured contact form.
-  - A Image representing a buttom that send the mesage
-  - A footer with icons and links 
+  - A well structured contact form with 5 fields: name, subject, email, and message with a submit btn at the end.
+
 #### contact-response.html features
   - Has a positive message comfirming to the user that their message has been sent.
   - A botton that redirect the user back home if desired.
-  - A footer with icons and links
 
 #### contact-error-response.html features
   - Has a message informing the user that their message has not been sent.
