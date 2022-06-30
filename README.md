@@ -268,8 +268,7 @@ After an intensive search for the right font, I encountered Montserrat, the most
 
 ## Existing Features
 
-The project consists of three main pages, and has a 404.html error page, a response page and error page for for the contact. The three main page can be accessed through the footer icons.
-
+The project consists of three main pages, and has a 404.html and 500.html error page, login and logout functionality, a response page page for for the contact, myrecipes that is where all the recipes for the user is stored, and the home page. The main pages can be accessed through the navbar.
 
 **Fabicon**
 
