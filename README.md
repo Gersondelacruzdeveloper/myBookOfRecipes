@@ -276,7 +276,7 @@ Myonlinerecipes favicon, displayed on the web Brower’s tab, allows the user to
  
 **More Features**
 
-- *** Game Logo ***: The logo of the game is the Harry Potter title. Designed in a Harry Potter font that is recognizable across all franchises.
+- *** myonlinerecipe Logo ***: It is the default logo style for boostrap but recognizable across all website.
 
 - **Contact Page**: Allow the user to Contact me for any enquiries through.
 
