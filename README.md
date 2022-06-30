@@ -439,9 +439,7 @@ The rest of the pages passed the test with no problem.
 
 There were no errors to show so I did not have to fix anything:
 
-The style.css file currently has no errors:
-<img src="assets/documentation/testing/css-validation-no-error-page.png" height="auto" width="100%" alt="W3C CSS Validation screenshot showing that the CSS file has no errors."/>
-
+![alt text](./myonlinerecipes/static/documentation//testing/css_validation.png "error fixed.")
 <br>
 
 ### Manual Testing
