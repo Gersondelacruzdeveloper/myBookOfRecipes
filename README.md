@@ -288,19 +288,17 @@ Myonlinerecipes favicon, displayed on the web Brower’s tab, allows the user to
 **Footer**
 Each page has a fixed footer at the bottom. This provides Facebook, Instagram, Twitter and Tik Tok links as well as a copyright with my name on it.
 
-#### (home)features
+#### (home) features
   - In home we can see the all the beatiful recipes, a big heading title so the user understand where it is located and a navbar and footer.
   - in Navbar we can vizualize the all links in color white and background green. all links contains icons to make the user understand at glance.
   - Footer contains copyright and links with the same color schema of the navbar.
 
-#### game.html features
-  - Title giving instruction.
-  - Level 1 showing 8 cards,
-  - level two with 16 cards, 
-  - level three with 24 cards all identical with the Harry potter theme.
-  - A footer with icons and links 
-  - Top left-hand corner feature a flag poll that counts down to 30s.
-  - Top right of the screen has a harry potter awl carrying mail that shows the game 
+#### Myrecipe page feature
+  - The same as the home page except that it has:
+  - A edit button, 
+  - Delete button,
+  - Add recipe button bellow the heading title
+
 #### contact.html features
   - Title encoraging user to send a mesage.
   - A well structured contact form.
