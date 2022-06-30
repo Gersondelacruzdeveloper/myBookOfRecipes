@@ -223,7 +223,7 @@ The main content areas were expressed in similar ways to create consistency acro
 - The **Comments** model is composed of 7 columns including the id as well. this model does not have one to many relationships with other models but it can easily access to the **User** and **Recipes** model because of its **backref relationship** that points from **User** and **Recipes** to **Comments**
 
 - Database schema design was created using [DrawSql](https://drawsql.app/), see below.
-![Database Design](./myonlinerecipes/static/documentation//Database_schama.png)
+![Database Design](./myonlinerecipes/static/documentation/Database_schama.png)
 
 ### Surface
 
