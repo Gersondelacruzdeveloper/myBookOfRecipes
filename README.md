@@ -228,7 +228,7 @@ The main content areas were expressed in similar ways to create consistency acro
 ### Surface
 
 ##### Design
-The Project Design is a combination of my own design implemented with the bootstrap framework. The colour helps the website to stand out and give a clear meaning of what the website is about as the colour is usually found in food. Its aim is to be engaging, alluring, and cohesive.
+The Project Design is a combination of my own design implemented with the bootstrap framework. The colour helps the website to stand out and give a clear meaning of what the website is about as the colour is usually found in food and nature. Its aim is to be engaging, alluring, and cohesive.
 
 ##### Logo design 
 The logo of the site is located on the left side of the navbar as the bootstrap standard logo, and it is bigger than the others links in order to stand out. and make it recognised by the users.
@@ -242,8 +242,8 @@ The colour scheme for the game was chosen in order to convey excitement, clean a
 
 <sub>*Colour palette created at* [coolors.co](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff).</sub>
 
-- #a13723, Chinese Red, is usually associated with life, health, courage,love, luck, joy, and happiness.
-     - Used in the navbar and in the footer as it makes a beautiful combination with the dishes as well.
+- #004b49, Deep jungle green,Psychologically, when humans think of this color, Deep jungle green, they might associate it with being clean, glamorous, elegant, the home, and accessibility.
+     - Used in the navbar and in the footer as it makes a beautiful combination.
 
 - #f2f2f2, Culture color, which is a light grey represent neutrality and balance. 
    - Used in the background of the website in order to the main content stand out.
@@ -253,12 +253,10 @@ The colour scheme for the game was chosen in order to convey excitement, clean a
 - Used in the Card
 - As main color text
 
-
 - #626567, Granite Grey, used in the card for the text as it is darker than the Culture colour and makes the text to be more visible.
 
 - #000000, Black color represents evil, darkness, night, and despair. It’s the color used to convey certainty and authority.
 - Used in all header title so the users knows at glance where they are located
-
 
 
 #### Icons
