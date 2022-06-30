@@ -286,15 +286,13 @@ Myonlinerecipes favicon, displayed on the web Brower’s tab, allows the user to
 
 
 **Footer**
+Each page has a fixed footer at the bottom. This provides Facebook, Instagram, Twitter and Tik Tok links as well as a copyright with my name on it.
 
-Each page has a fixed footer at the bottom. This provides Facebook, Instagram, Twitter and Tik Tok links as well as a copyright with my game on it.
+#### (home)features
+  - In home we can see the all the beatiful recipes, a big heading title so the user understand where it is located and a navbar and footer.
+  - in Navbar we can vizualize the all links in color white and background green. all links contains icons to make the user understand at glance.
+  - Footer contains copyright and links with the same color schema of the navbar.
 
-#### Index.html (home)features
-  -  Name of the game in a large decorative font, this is the first thing the player see when opening the game.
-  - The main character flying across the page.
-  -  Simple user-friendly icons for the user to navigate easily.
-  - A button to start the game
-  - A footer with icons and links 
 #### game.html features
   - Title giving instruction.
   - Level 1 showing 8 cards,
