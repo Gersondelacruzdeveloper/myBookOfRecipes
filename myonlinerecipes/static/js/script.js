@@ -3,10 +3,12 @@
  */
 const privateSwitch = () => {
     let myswitch = document.getElementById("switch")
-    if (myswitch.checked === true) {
-        document.getElementById("switch-label").innerHTML = 'Private'
-    } else {
-        document.getElementById("switch-label").innerHTML = 'Public'
+    if (myswitch){
+        if (myswitch.checked === true) {
+            document.getElementById("switch-label").innerHTML = 'Private'
+        } else {
+            document.getElementById("switch-label").innerHTML = 'Public'
+        }
     }
 }
 privateSwitch()
