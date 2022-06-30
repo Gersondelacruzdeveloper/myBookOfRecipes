@@ -282,8 +282,7 @@ Myonlinerecipes favicon, displayed on the web Brower’s tab, allows the user to
 
 **Footer**
 
-Each page has a fixed footer at the bottom. This provides GitHub link, LinkedIn link, and icon to go to contact page to message directly if desired. Furthermore, it has an Instruction icon when it clicks a modal show up and provide information and rules about the game, and to the right it contains the copyright at my name.
-
+Each page has a fixed footer at the bottom. This provides Facebook, Instagram, Twitter and Tik Tok links as well as a copyright with my game on it.
 
 #### Index.html (home)features
   -  Name of the game in a large decorative font, this is the first thing the player see when opening the game.
