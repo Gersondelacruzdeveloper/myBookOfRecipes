@@ -392,6 +392,7 @@ To fixed the problem above, I  to add aria-label and and rel to the button in my
 ![alt text](./myonlinerecipes/static/documentation//testing/succcesful_test_myrecipes.png "error fixed.")
 <br>
 
+
 ### HTML Validation
 
 [W3C HTML Validation Service](https://validator.w3.org/#validate_by_uri) was used to validate the HTML documents. It highlighted 3 errors across the site which have since been recitified: 
@@ -419,6 +420,17 @@ By Mistake I added double closing i tag when i was adding the icons. so I just d
 
 ![alt text](./myonlinerecipes/static/documentation//testing/home_html_pass_test.png "error fixed.")
 <br>
+
+The rest of the pages passed the test with no problem.
+
+**login html test**
+![alt text](./myonlinerecipes/static/documentation//testing/login_html_test_pass.png "error fixed.")
+
+**sign Up html test**
+![alt text](./myonlinerecipes/static/documentation//testing/signup_html_test_pass.png "error fixed.")
+
+**myrecipe html pages test**
+![alt text](./myonlinerecipes/static/documentation//testing/myrecipes-html-test-pass.png "error fixed.")
 
 
 ### CSS Validation
