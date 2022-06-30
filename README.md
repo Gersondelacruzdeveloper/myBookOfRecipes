@@ -276,9 +276,14 @@ Myonlinerecipes favicon, displayed on the web Brower’s tab, allows the user to
  
 **More Features**
 
-- *** myonlinerecipe Logo ***: It is the default logo style for boostrap but recognizable across all website.
+- **myonlinerecipe Logo**: It is the default logo style for boostrap but recognizable across all website.
 
-- **Contact Page**: Allow the user to Contact me for any enquiries through.
+- **The recipe form Page** and **The edif form Page**: allow the user to craete beatiful recipes, I added a rich ckeditor which help to tape the ingridients and method easier and more beatiful.
+
+- **The Search functionality**: allow the user to search for any recipe in the database except for the recipe that are privat. they are allow to search by method, title and ingridients.
+
+- **Commet section**: allow the user comment on any recipe and even ask questions about the recipe. All users can interact with each other this way and share their experiend with the recipe.
+
 
 **Footer**
 
