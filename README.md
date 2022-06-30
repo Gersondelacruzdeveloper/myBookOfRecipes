@@ -392,39 +392,6 @@ To fixed the problem above, I  to add aria-label and and rel to the button in my
 ![alt text](./myonlinerecipes/static/documentation//testing/succcesful_test_myrecipes.png "error fixed.")
 <br>
 
-
-Erro 3 - "Images are not properly size"
-
-My game is made of mostly using images. Images are very dificult to get a good score with google chrome, I have try to increase the score by changing the images extension from png to webp or avif as google Chrome Lighthouse recommend to get better score however Safari does not support this file and for does not show the images.
-
-**Solution Error 1** Added i tag with classes for icons in footer.
-
-**Solution Error 2** Added aria-label and rel attribute.
-
-**Solution Error 3** Properly size images.
-
-#### Home
-<img src="assets/documentation/testing/after-fixing-bug.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
-
-#### Game
-<img src="assets/documentation/testing/game-screenshot-score.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
-<br>
-
-### contact Page
-
-<img src="assets/documentation/testing/contact-screenshoot-score.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
-
-### Contact response page
-<img src="assets/documentation/testing/contact-response-score.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
-
-### Contact response error page
-<img src="assets/documentation/testing/contact-error-response.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
-
-### 404 page
-<img src="assets/documentation/testing/404-page-score.png" height="auto" width="100%" alt="Google Chrome Developer Lighthouse Test Scores"/>
-
-<br>
-
 ### HTML Validation
 
 [W3C HTML Validation Service](https://validator.w3.org/#validate_by_uri) was used to validate the HTML documents. It highlighted four errors across the site which have since been recitified: 
