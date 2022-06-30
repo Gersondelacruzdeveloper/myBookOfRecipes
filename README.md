@@ -645,71 +645,81 @@ As a registered user of MyOnlineRecipes site I want to be able to:
 <br>
 
 
+## Deployment
+### How to run this project locally
 
+To run this project on your own Integrated Development Environment ensure that the 
+following are installed on your machine:
 
+- PIP
+- Python 3
+- Git
 
-
-
-
-
+- Download postgresq (Refer to the [postgresq](https://www.postgresql.org/download) for more help.)
 
 <br>
-## Deployment
 
-## How this Project was Deployed
+### To clone the repository:
+1. Log in to Github.
 
-This project was deployed to GitHub pages via the following steps:
+2. Navigate to the main page of the repository.
 
-1. Log into [GitHub](https://GitHub.com/).
-2. From the list of Repositories, select [Milestone-Project2 ](https://github.com/Gersondelacruzdeveloper/Milestone-Project2).
-3. From the Repositories sub-headings, select "Settings".
-4. Under "Options", the first category of settings, scroll down to the GitHub Pages section.
-5. From the dropdown list under the "Source" heading, select "master".
-6. A second drop-down menu that appears should remain as the default value, "/root".
-7. Press Save. 
-8. On Page refresh, scroll back down to the GitHub Pages section, and the link to the deployed site will be available in a green sub-section with a tick icon next to it.
+3. Select the Code button from the navigation bar below the repository title.
 
-As this project was developed on the master branch, all changes made to the repository are immediately reflected in the deployed project.
+![alt text](./myonlinerecipes/static/documentation/testing/github-clone-repo.png "Clone or Download Menu in GitHub.")
 
-## How to Run this Project in your Browser
+<br>
 
-1. Install the [Google Chrome](https://www.google.co.uk/chrome/) or [Firefox](https://www.mozilla.org/en-GB/exp/firefox/new/) browser.
-2. Install the applicable [GitPod](https://www.gitpod.io/docs/browser-extension/) Browser Extensions for your chosen browser.
-4. Create a [GitHub](https://GitHub.com/join) account. 
-3. Log in to [Gitpod](https://gitpod.io/login/) using your GitHub account.
-4. From the list of Repositories select [Milestone-Project2 ](https://github.com/Gersondelacruzdeveloper/Milestone-Project2)
-5. Open the repository in Gitpod:
-    * Click the green "Gitpod" icon at the top of the Repository.
-6. A new workspace will open with the current state of the master branch. Any changes made to the master branch after this point will not be automatically updated in your Gitpod Workspace.
+4. Under the heading Clone select 'HTTPS'
 
-### Cloning the Repository
+5. Click the image of a clipboard to the right of the URL in order to copy the address.
 
-1. Vsisit this link [Milestone-Project2 ](https://github.com/Gersondelacruzdeveloper/Milestone-Project2).
-2. Click the "Code" dropdown box above the repository's file explorer. 
-3. Under the "Clone" heading, click the "HTTPS" sub-heading.
-4. Click the clipboard icon, or manually copy the text presented: `https://github.com/Gersondelacruzdeveloper/Milestone-Project2.git`
-5. Open your preferred IDE (VSCode, Atom, PyCharm, etc).
-6. Ensure your IDE has support for Git, or has the relevant Git extension.
-7. Open the terminal, and create a directory where you would like the Repository to be stored.
-8. Type `git clone` and paste the previously copied text (`https://github.com/Gersondelacruzdeveloper/Milestone-Project2.git`) and press enter.
-9. The Repository will then be cloned to your selected directory. 
+6. Open a terminal window in your selected IDE.
+
+7. Navigate to the desired directory in which you wish to place the cloned directory.
+
+8. Type git clone, space, and then paste the copied URL.
+
+```
+git clone https://github.com/Gersondelacruzdeveloper/myBookOfRecipes.git
+```
+9. Press 'Enter' to create the clone.
+
+(Alternative you can select "Download ZIP" from the dropdown menu, extract the zip file to your chosen folder and use your IDE of choice to access it.)
+
+<br>
+11. Within your terminal window install the required dependencines needed to run the application using the following command:
+
+```
+$ pip3 install -r requirements.txt
+```
+12. Initialize virtual environment by typing the following command into the terminal:
+```python
+py -m venv virtual
+```
+14. Within your IDE create a file to hold your environment variables and call it env.py.
 
 
-### Manually Downloading the Repository
+import os
+os.environ.setdefault("IP", "0.0.0.0" )
+os.environ.setdefault("PORT", "5000" )
+os.environ.setdefault("SECRET_KEY", "SECRET_KEY" )
+os.environ.setdefault("DEBUG", "True" )
+os.environ.setdefault("DATABASE_URL", "YOUR_DATABASE_NAME")
+os.environ.setdefault("DEVELOPMENT", "True" )
+os.environ.setdefault("MAIL_PORT", "587")
+os.environ.setdefault("MAIL_USERNAME", "YOUR_EMAIL" )
+os.environ.setdefault("MAIL_PASSWORD", "YOUR_MAIL_PASSWORD")
 
-1. Vsisit this link [GitHub Repository](https://GitHub.com/BAK2K3/hard-drivers).
-2. Click the "Code" dropdown box above the repository's file explorer. 
-3. Click the "Download ZIP" option; this will download a copy of the selected branch's repository as a zip file.
-4. Locate the ZIP file downloaded to your computer, and extract the ZIP to a designated folder which you would like the repository to be stored.
+15. Add your .env file to your .gitignore file.
 
-### Opening the Repository 
+16. You will then be able to run the app locally by typing 
+```python
+python run.py
 
-1. Open your preferred IDE (VSCode, Atom, PyCharm, etc).
-2. Navigate to the chosen directory where the Repository was Cloned/Extracted.
-3. You will now have offline access to the contents of the project.
+```
 
 ---
-
 ## Credits
 
 ### Content
