@@ -366,7 +366,7 @@ Each page has a fixed footer at the bottom. This provides Facebook, Instagram, T
 [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) were used extensively throughout the development process in order to test whether elements were responsive when viewed on mobile and tablet devices. When problems were encountered the Device Selector was used to target the element.  Using the Elements Panel in Developer Tools the code in question was altered in order to achieve the desired result. 
 Working code snippets were then replicated in the style.css file in vs code. Other solutions for errors were found in the Code Institute [Slack](code-institute-room.slack.com) channels, on [Stack Overflow](https://stackoverflow.com/), on [W3Schools](https://www.w3schools.com) and on [heroku website](https://dashboard.heroku.com/).
 
-The website was regularly tested using the ***Google Chrome Developer Tools Lighthouse test**. During the testing I highlighted three errors across the site which have since been recitified:
+The website was regularly tested using the ***Google Chrome Developer Tools Lighthouse test**. During the testing I highlighted errors across the site which have since been recitified:
 
 ## Home page
 
@@ -394,23 +394,30 @@ To fixed the problem above, I  to add aria-label and and rel to the button in my
 
 ### HTML Validation
 
-[W3C HTML Validation Service](https://validator.w3.org/#validate_by_uri) was used to validate the HTML documents. It highlighted four errors across the site which have since been recitified: 
-- Misspell div element in home and contact page, the correct element was added.
-- "Element bold not allowed as a child of element p". The element was eliminated and added a class called bold.
-- "The aria-labelledby attribute must point to an element in the same document". I copied the code for the modal from bootstrap and as I was opening the modal with my own javascript, ther were no need for me to used aria-labelledby attribute, so I deleted the aria-labelledby.
-- "Duplicate ID" Deleted the ids and added classes. 
+[W3C HTML Validation Service](https://validator.w3.org/#validate_by_uri) was used to validate the HTML documents. It highlighted 3 errors across the site which have since been recitified: 
 
-The site currently has no errors:
+## Contact page 
 
-### Home page 
-<img src="assets/documentation/testing/home-html-validation-page.png" height="auto" width="100%" alt="W3C HTML Validation screenshot for home page showing that the site has no errors." />
+***Error 1**  - "Attribute is obsolete"
+<br>
+***Error 2**  - "section lack of heading error"
+![alt text](./myonlinerecipes/static/documentation//testing/contact_test_html_fail.png "error fixed.")
+<br>
+To fixed ***Error 1** issue I eliminated the link that was not been used.
+To fixed ***Error 2**  I added a heading element in the title.
 
-### Game page 
-<img src="assets/documentation/testing/game-html-validation-page.png" height="auto" width="100%" alt="W3C HTML Validation screenshot for Game page showing that the site has no errors." />
+Both error Fixed
+![alt text](./myonlinerecipes/static/documentation//testing/contact_html_test_pass.png "error fixed.")
+<br>
 
-### Contact page 
-<img src="assets/documentation/testing/contact-html-validation-page.png" height="auto" width="100%" alt="W3C HTML Validation screenshot for Game page showing that the site has no errors." />
+## Home page 
 
+***Error 3**  - "Error tag i"
+![alt text](./myonlinerecipes/static/documentation//testing/home_html_fail.png "error fixed.")
+
+By Mistake I added double closing i tag when i was adding the icons. so I just deleted the exta tag.
+
+![alt text](./myonlinerecipes/static/documentation//testing/home_html_pass_test.png "error fixed.")
 <br>
 
 
