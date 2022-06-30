@@ -25,11 +25,11 @@
     <div class="dish-card">
 
       {% if recipe.image_url %}
-      <a class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img
-          src="{{recipe.image_url}}"></a>
+      <a aria-label="dish" rel="noopener" class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img
+          src="{{recipe.image_url}}" alt="image of a dish meal"></a>
       {% else %}
-      <a class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img
-          src="{{url_for('static', filename='images/default-img.jpg')}}"></a>
+      <a aria-label="dish" rel="noopener" class="dish-image" href="{{url_for('detail_recepe', recipe_id=recipe.id)}}"> <img
+          src="{{url_for('static', filename='images/default-img.jpg')}}" alt="image of a dish meal"></a>
       {% endif%}
 
       <div class="dish-title">
