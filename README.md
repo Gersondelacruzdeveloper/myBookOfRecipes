@@ -190,15 +190,8 @@ The main content areas were expressed in similar ways to create consistency acro
 
 - [My Recipes page wireframe: ](./myonlinerecipes/static/documentation/wireframes/myrecipespage-desktop.png)
 
-- [Password reset page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetpage-desktop.png)
-
-- [Password reset sent page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetsentpage-desktop.png)
-
 - [Register account page wireframe: ](./myonlinerecipes/static/documentation/wireframes/Registeraccountpage-desktop.png)
 
-- [set password page wireframe: ](./myonlinerecipes/static/documentation/wireframes/set-password-page-desktop.png)
-
-- [Reset password complete page wireframe: ](./myonlinerecipes/static/documentation/wireframes/reset-password-complete-page-desktop.png)
 
 ##### Tablet
 - [Home Page wireframe: ](./myonlinerecipes/static/documentation/wireframes/Home-tablet.png)
@@ -206,16 +199,7 @@ The main content areas were expressed in similar ways to create consistency acro
 - [Login page wireframe: ](./myonlinerecipes/static/documentation/wireframes/loginpage-tablet.png)
 - [Add Recipes form wireframe: ](./myonlinerecipes/static/documentation/wireframes/Addrecipeform-tablet.png)
 - [My Recipes page wireframe: ](./myonlinerecipes/static/documentation/wireframes/myrecipespage-tablet.png)
-
-- [Password reset page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetpage-tablet.png)
-
-- [Password reset sent page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetsentpag-tablet.png)
-
 - [Register account page wireframe: ](./myonlinerecipes/static/documentation/wireframes/Registeraccountpage-tablet.png)
-- [set password page wireframe: ](./myonlinerecipes/static/documentation/wireframes/set-password-page-tablet.png)
-
-- [Reset password complete page wireframe: ](./myonlinerecipes/static/documentation/wireframes/reset-password-complete-page-tablet.png)
-
 
 
 ##### Mobile
@@ -224,14 +208,7 @@ The main content areas were expressed in similar ways to create consistency acro
 - [Login page wireframe: ](./myonlinerecipes/static/documentation/wireframes/loginpage-mobile.png)
 - [Add Recipes form wireframe: ](./myonlinerecipes/static/documentation/wireframes/Addrecipeform-mobile.png)
 - [My Recipes page wireframe: ](./myonlinerecipes/static/documentation/wireframes/myrecipespage-mobile.png)
-- [Password reset page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetpage-mobile.png)
-
-- [Password reset sent page wireframe: ](./myonlinerecipes/static/documentation/wireframes/passwordresetsentpage-mobile.png)
-
 - [Register account page wireframe: ](./myonlinerecipes/static/documentation/wireframes/Registeraccountpage-mobile.png)
-- [set password page wireframe: ](./myonlinerecipes/static/documentation/wireframes/set-password-page-mobile.png)
-
-- [Reset password complete page wireframe: ](./myonlinerecipes/static/documentation/wireframes/reset-password-complete-page-mobile.png)
 
 <br>
 
