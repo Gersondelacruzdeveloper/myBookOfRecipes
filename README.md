@@ -321,7 +321,7 @@ Each page has a fixed footer at the bottom. This provides Facebook, Instagram, T
 
 
 ### Future Feature Considerations
-  - For adding future features I would like to implement a login and logout functionality and create a review system that allow users to imform me about improvement they would like to see in the game, I also would like to add more levels, I also would like to add a score board where player can compete to become top scorer.
+  - For adding future features I would like to add pagination and a password reset function that send an email to the user and logged them back in where they can set a new password.
 
 
 ## Technologies Used
