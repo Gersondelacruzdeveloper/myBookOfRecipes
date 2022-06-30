@@ -718,6 +718,63 @@ os.environ.setdefault("MAIL_PASSWORD", "YOUR_MAIL_PASSWORD")
 python run.py
 
 ```
+## Heroku Deployment
+
+Before creating the Heroku application:
+
+1. Within your IDE, create a requirements.txt file that contains the applications and dependencies required to run the app using the command:
+```
+pip3 freeze --local > requirements.txt
+```
+2. Create a Procfile, which specifies the commands that are executed by the app on startup:
+```
+echo web: python app.py > Procfile
+```
+3. Add the new files to the staging area in git and then commit the files to the local repository:
+```
+git add -A
+git commit -m "feat: Add requirements.txt file and Procfile."
+```
+4.  Upload the local repository content to the remote repository:
+```
+git push
+
+<br>
+
+### Deployment procedure followed:
+1. Navigated to the [Heroku](https://www.heroku.com/) site.
+2. Logged in to the site.
+3. Created a new app on the Heroku website by clicking the "New" button on the dashboard. 
+![alt text](documentation/readme-images/heroku-new-app-button.png "New App button in Heroku.")
+
+<br>
+
+4. Named the Heroku App and set the region to Europe.
+
+5. 'Deploy' was selected from the dashboard of the newly created application.  In the 'Deployment method' section GitHub was selected.
+![alt text](documentation/readme-images/heroku-deploy-to-github.png "Deploy to GitHub in Heroku.")
+
+ Making sure that the correct GitHub profile was displayed, myBookOfRecipes repository was entered into the search box.
+
+ 7. When found, the button 'Connect' was clicked.
+
+|Key            |Value                  |
+|:--------------|:----------------------|
+|IP	            |0.0.0.0                |
+|PORT           |5000                   |
+|DATABASE_URL	  |Heroku will generate one for you|
+|SECRET_KEY	    |<secret_key>      |
+|MAIL_PASSWORD  |<your_password>   |
+|MAIL_PORT       |587           |
+|MAIL_USERNAME   |<your_email>  |
+|debug           |False
+
+<br>
+
+
+9. In the Heroku dashboard within the 'Deploy' tab, the 'Master' branch was selected in the 'Manual Deployment' section.
+
+10. Clicking on the 'Deploy Branch' button successfully deployed the site.
 
 ---
 ## Credits
