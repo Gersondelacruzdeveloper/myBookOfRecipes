@@ -786,20 +786,13 @@ git push
 
 ### Media
 
-* All png images were sourced from [flaticon](https://www.flaticon.com/search?word=python&type=icon) and [icons8.com](https://icons8.com/icons/set/html)
-
-* [flaticon](https://www.flaticon.com/search?word=python&type=icon). Used for most of the progress bar png image except from the last one in skills.html.
-* [icons8.com](https://icons8.com/icons/set/html). Used for the last image in progress bar in skills.html. 
+* All images for the site were taken from  [jamieoliver](https://www.jamieoliver.com/recipes/)
 
 ## Code
 
 * HTML/CSS: Implementation and utilisation of Grid CSS layout was assisted by [CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/).
 ]
 * HTML/CSS: Implementation and utilisation of Grid CSS layout was assisted by [W3school](https://www.w3schools.com/css/css_grid.asp).
-
-* HTML/CSS: code for fliping the card found here and modified acording to my requierments [W3school](https://www.w3schools.com/howto/howto_css_flip_card.asp).
-
-* HTML/CSS: code for spinners W3school](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader2).
 
 ---
 
