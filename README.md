@@ -443,14 +443,14 @@ There were no errors to show so I did not have to fix anything:
 <br>
 
 ### Manual Testing
-The game has been tested in the following browsers:
+The recipe website has been tested in the following browsers:
 - Chrome Version 85.0.4183.121 
 - Samsung Internet Version 12.0.1.47	
 - Microsoft Edge Version 85.0.564.63 
 - Opera 70
 - Mozilla Firefox 81.0.1
 
-The game works and functions as expected on Samsung Internet, Google Chrome, Microsoft Edge, Opera and Firefox.
+The recipe website and functions as expected on Samsung Internet, Google Chrome, Microsoft Edge, Opera and Firefox.
 <br>
 
 ### Responsiveness
