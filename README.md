@@ -364,15 +364,45 @@ Each page has a fixed footer at the bottom. This provides Facebook, Instagram, T
 ## Testing
 
 [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) were used extensively throughout the development process in order to test whether elements were responsive when viewed on mobile and tablet devices. When problems were encountered the Device Selector was used to target the element.  Using the Elements Panel in Developer Tools the code in question was altered in order to achieve the desired result. 
-Working code snippets were then replicated in the style.css file in [Gitpod](https://www.gitpod.io/). Other solutions for errors were found in the Code Institute [Slack](code-institute-room.slack.com) channels, on [Stack Overflow](https://stackoverflow.com/), on [W3Schools](https://www.w3schools.com) and on [Code Pen](https://codepen.io).
+Working code snippets were then replicated in the style.css file in vs code. Other solutions for errors were found in the Code Institute [Slack](code-institute-room.slack.com) channels, on [Stack Overflow](https://stackoverflow.com/), on [W3Schools](https://www.w3schools.com) and on [heroku website](https://dashboard.heroku.com/).
 
-  ### Home Page
 
-The website was regularly tested using the Google Chrome Developer Tools Lighthouse test. During the testing I highlighted three errors across the site which have since been recitified:
+The website was regularly tested using the ***Google Chrome Developer Tools Lighthouse test**. During the testing I highlighted three errors across the site which have since been recitified:
 
- Erro 1 - "Elements contain focusable descendents" [Image of the issue](assets/documentation/testing/home-error.png)
+## Home page
 
- Erro 2 - "Links do not have dicernible name" [Image of the issue](assets/documentation/testing/accesibility-errors.png)
+ ***Error 1 Best Practice error** - "Browser errors logged to the console":
+
+![alt text](./myonlinerecipes/static/documentation/testing/best_practice_problem_in_home.png "Screenshot of Best Practice error.")
+
+<br>
+And it was showing in the **console** as:
+
+![alt text](./myonlinerecipes/static/documentation//testing/script_console_error.png "Screenshot of Best Practice error.")
+<br>
+
+The reason why the error occur is because javascript could not get the id unless we are at the page, so what I did was to add an extra measure. and said basicaly if the id is in the page then request the toggle btn.
+
+Image error fixed
+
+![alt text](./myonlinerecipes/static/documentation//testing/succesful_test_home.png "error fixed.")
+<br>
+
+
+## Myrecipe page
+
+***Error 2 Accessibility error**  - "buttons do not have dicernible name"
+
+![alt text](./myonlinerecipes/static/documentation//testing/myrecipes-accessability_problem.png "error fixed.")
+<br>
+
+To fixed the problem above, I  to add aria-label and and rel to the button in my recipe page.
+
+**Problem 2 solved**
+
+![alt text](./myonlinerecipes/static/documentation//testing/succcesful_test_myrecipes.png "error fixed.")
+<br>
+
 
 Erro 3 - "Images are not properly size"
 
