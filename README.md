@@ -515,8 +515,6 @@ All functionality for the footer was manualy tested on every page.
 
 * Visit all links within the navbar in every possible order to ensure they are functional and route correctly.
 
-* Play the game in every level to ensure the game works as espected.
-
 ## Enquire Form
 *Ensure all placeholders has its appropriate name.
 *Ensure Full Name field accepts any value, but requires at least one character to be deemed valid.
@@ -524,8 +522,7 @@ All functionality for the footer was manualy tested on every page.
 *Ensure Message field accepts any value, but requires at least one character to be deemed valid.
 *Ensure Email field only accept values in appropriate email format and cannot leave it in blank.
 *Ensure all input request are met before submitting the form.
-*Ensure users or potential employers received the nice and tidy message after submitting the form.
-
+*Ensure users received the nice and tidy message after submitting the form.
 
 <br>
 <br>
