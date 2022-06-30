@@ -373,9 +373,11 @@ The website was regularly tested using the ***Google Chrome Developer Tools Ligh
  ***Error 1 Best Practice error** - "Browser errors logged to the console":
 ![alt text](./myonlinerecipes/static/documentation/testing/best_practice_problem_in_home.png "Screenshot of Best Practice error.")
 <br>
+
 And it was showing in the **console** as:
 ![alt text](./myonlinerecipes/static/documentation//testing/script_console_error.png "Screenshot of Best Practice error.")
 <br>
+
 The reason why the error occur is because javascript could not get the id unless we are at the page, so what I did was to add an extra measure. and said basicaly if the id is in the page then request the toggle btn.
 Image error fixed
 ![alt text](./myonlinerecipes/static/documentation//testing/succesful_test_home.png "error fixed.")
@@ -386,6 +388,7 @@ Image error fixed
 ***Error 2 Accessibility error**  - "buttons do not have dicernible name"
 ![alt text](./myonlinerecipes/static/documentation//testing/myrecipes-accessability_problem.png "error fixed.")
 <br>
+
 To fixed the problem above, I  to add aria-label and and rel to the button in my recipe page.
 
 **Problem 2 solved**
@@ -552,6 +555,102 @@ Basically SQLAlchemy 1.4.x has removed support for the postgres URI scheme, and 
 <br>
 
 After that the **Problem was fixed**
+
+####  Testing user story
+
+As a potential MyOnlineRecipes site user I want to be able to:
+
+&#9745; mmediately comprehend the purpose behind the MyOnlineRecipes site and view some of the recipes.
+
+![alt text](./myonlinerecipes/static/documentation/testing/home_page.png "home page.")
+<br>
+
+&#9745; Navigate throughout the site with eases.
+
+![alt text](./myonlinerecipes/static/documentation/testing/navbar.png "navbar.")
+<br>
+
+&#9745; Easily create an account and sign in to it..
+
+![alt text](./myonlinerecipes/static/documentation/testing/signUp.png "signUp.")
+<br>
+
+![alt text](./myonlinerecipes/static/documentation/testing/login.png "login.")
+<br>
+
+&#9745; Log out of my account once finished on the website.
+
+![alt text](./myonlinerecipes/static/documentation/testing/logout.png "logout.")
+<br>
+
+&#9745; Contact admin with queries or feedback.
+
+![alt text](./myonlinerecipes/static/documentation/testing/contact.png "contact.")
+<br>
+
+
+*** As a returning or registered user**
+
+As a registered user of MyOnlineRecipes site I want to be able to:
+
+&#9745; Save private recipes that only I can see..
+
+![alt text](./myonlinerecipes/static/documentation/testing/private.png "private.")
+<br>
+
+&#9745; Have the option to share my recipes with other users.
+
+![alt text](./myonlinerecipes/static/documentation/testing/public.png "public.")
+<br>
+
+&#9745; Create my own recipes.
+
+![alt text](./myonlinerecipes/static/documentation/testing/add_recipe.png "add_recipe screenshoot.")
+<br>
+
+&#9745; Edit the recipes I have added..
+
+![alt text](./myonlinerecipes/static/documentation/testing/edit_recipe.png "edit_recipe screenshoot.")
+<br>
+
+&#9745; Delete the recipes I have added..
+
+![alt text](./myonlinerecipes/static/documentation/testing/delete.png " delete.")
+<br>
+
+&#9745; Have a rich text editor which enable me to writing beatiful content.
+
+![alt text](./myonlinerecipes/static/documentation/testing/rich_text_editor.png "screenshoot of text editor.")
+<br>
+
+&#9745; Comments on recipes, so I can share my opinion with other users.
+
+![alt text](./myonlinerecipes/static/documentation/testing/social_media.png "social_media screenshoot.")
+<br>
+
+
+***Site Owner**
+
+&#9745; Provide the user with a beatiful image cover in case they decide not put add an image to the recipes..
+
+![alt text](./myonlinerecipes/static/documentation/testing/image-cover.png "image-cover screenshoot.")
+<br>
+
+&#9745; Provide site members with the ability to search the site for a specific recipes by entering the title or Ingridients into a search box within the site.
+
+![alt text](./myonlinerecipes/static/documentation/testing/search-box.png "search-box screenshoot.")
+<br>
+
+![alt text](./myonlinerecipes/static/documentation/testing/search-functionality.png "search-box screenshoot.")
+<br>
+
+
+
+
+
+
+
+
 
 
 <br>
