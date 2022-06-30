@@ -95,7 +95,7 @@ As a registered user of MyOnlineRecipes site I want to be able to:
 - Contact admin with queries or feedback.
 - Comments on recipes, so I can share my opinion with other users.
 - Find social media links, so I can follow them on different platforms.
-- Find pagination on the recipe pages, so I do not experience endless scrolling.
+
 
 #### Site Owner
 As the owner of MyOnlineRecipes website I would like to:
@@ -161,19 +161,6 @@ The Loging page contains a card with a header title, two fields: one for the pas
 
 ##### Sign up page 
 The signup page contains the same as the login page exept that it contains 2 more input fields, which are the email and the comfirmation of the second password, also it has a sentence with a login link,  in case the user already has the credentioal to login. 
-
-##### Reset Password Page
-The reset password page contains an input box with 2 buttons one is to cancel and the other button is to submit the request of changing passwords, also it has a header title and below a beautiful paragraph with instructions.
-
-##### Reset Password Sent Page
-The reset password sent page contains one header title and 2 paragraphs, providing the user with feedback and more instructions on what is the next stage in order to delete the password.
-
-##### Reset Password Set Page
-The reset password set page contains one header title, a sentence with instructions and 2 input box fields with a new password and confirm password, also a the bottom a submit button to confirm the request.
-
-##### Reset Password completed Page
-The reset Password completed informs the user that the password finally has been successfully changed, it contains a title, the success message and a link to login to the site again.
-
 
 ##### 404 page
 Once the user navigates to a wrong path inside myonlinerecipes site, it will be redirected to a beautiful image which contains a button to return home, the header of the image saying 404 and a sentence letting the user know that he went to a run URL.
