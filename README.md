@@ -307,15 +307,17 @@ Each page has a fixed footer at the bottom. This provides Facebook, Instagram, T
   - Has a positive message comfirming to the user that their message has been sent.
   - A botton that redirect the user back home if desired.
 
-#### contact-error-response.html features
-  - Has a message informing the user that their message has not been sent.
-  - A botton that redirect the user back to contact if desired to try again.
-  - A footer with icons and links
 
   #### 404.html features
   - Has a message informing the user that the page they are loking for does not exist.
   - A botton that redirect the user back home if desired.
-  - A footer with icons and links
+  - A footer with icons and links and navbar
+
+
+  #### 500.html features
+  - Has a message informing the user that something went wrong.
+  - A botton that redirect the user back home if desired.
+  - A footer with icons and links and navbar
 
 
 ### Future Feature Considerations
